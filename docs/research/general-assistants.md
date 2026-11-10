@@ -256,7 +256,7 @@
 |---|---|---|---|---|---|
 | Indeed のアプリ(ChatGPT の中) | 求職者 | プロフィールをつなぎ、合う求人を出す。応募は Indeed で | 提供中(2026-02-10 発表)。国の範囲は記載なし | https://www.indeed.com/news/releases/indeed-launches-app-in-chatgpt?co=US | 2026-11-11 |
 | Indeed Apply For Me | 求職者 | プロフィールから応募の中身を下書き。自動で出す型は止め、人が見てから出す型に絞った | 米国の一部で試験(2026-07 発表、2026-08 更新) | https://www.indeed.com/news/releases/indeed-tests-apply-for-me-job-search?co=US | 2026-11-11 |
-| LinkedIn Hiring Pro(Claude の中) | 企業(中小) | 求人の原稿を作り、承認後に LinkedIn に載せ、候補者を絞る | Claude で提供中、Copilot は近く(2026-10-21 発表) | https://news.linkedin.com/2026/making-it-easier-for-small-businesses-to-hire-on-linkedin | 2026-11-11 |
+| LinkedIn Hiring Pro(Claude の中) | 企業(中小) | 求人の原稿を作り、承認後に LinkedIn に載せる(候補者を絞る段が Claude の中かは発表に書かれていない) | Claude で提供中、Copilot は近く(2026-10-21 発表) | https://news.linkedin.com/2026/making-it-easier-for-small-businesses-to-hire-on-linkedin | 2026-11-11 |
 
 - Indeed の Apply For Me は、汎用アシスタントではなく Indeed の中の機能。応募の代行は、求人サービスの中でも試験の段階で、自動の型は止めている（出典: https://www.indeed.com/news/releases/indeed-tests-apply-for-me-job-search?co=US 、見た日 2026-11-11）。
 

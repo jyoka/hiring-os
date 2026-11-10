@@ -61,7 +61,7 @@
 | Indeed PLUS AI アシスタント | 企業向け(国内) | 応募の状況を分析し、求人原稿の改善を提案する | ベータ(2026-09-07 から) | 企業の承認なしに原稿を変えない | https://jp.indeed.com/news/releases/20260907 |
 | リクルートエージェント AI 面接練習 | 求職者向け(国内) | 音声と映像で面接を練習する | 一般提供 | 結果は企業に渡さない(会社の説明) | https://www.r-agent.com/guide/?p=38627 |
 | LinkedIn Hiring Assistant | 企業向け | ヒアリング、ソーシング、評価、事前選考、日程調整 | 一般提供(版 2 は順次) | Recruiter の追加契約。指示した作業だけをする | https://business.linkedin.com/talent-solutions/hiring-assistant |
-| LinkedIn Hiring Pro(Claude から) | 企業向け(中小) | 求人原稿を作り、承認後に掲載し、候補者を絞る | 一般提供(Claude、2026-10-21 発表) | 人が直して承認してから載る | https://news.linkedin.com/2026/making-it-easier-for-small-businesses-to-hire-on-linkedin |
+| LinkedIn Hiring Pro(Claude から) | 企業向け(中小) | 求人原稿を作り、承認後に掲載する(候補者を絞る段が Claude の中かは発表に書かれていない) | 一般提供(Claude、2026-10-21 発表) | 人が直して承認してから載る | https://news.linkedin.com/2026/making-it-easier-for-small-businesses-to-hire-on-linkedin |
 | LinkedIn AI 求人検索、Job Match | 求職者向け | 自然な言葉で求人を探し、合い具合を示す | 一般提供(展開中) | 外部の AI への窓口は見つからなかった。規約は bot を禁止 | https://news.linkedin.com/2026/LinkedIn-Research-Talent-2026? |
 | ZipRecruiter | 両方 | ChatGPT アプリでの求人検索、選考の質問の提案、ZipIntro | 一般提供 | ATS 連携 180 以上。応募は自社のサイト | https://d18rn0p25nwr6d.cloudfront.net/CIK-0001617553/3f6efbcd-c86a-4295-a03c-b36dbbf4aa12.pdf |
 | ビズリーチ AI | 両方(国内) | 求人票の自動作成、スカウト文の調整、キャリア相談 AI | 一般提供 | 個人データの扱いの記載なし | https://www.bizreach.co.jp/pressroom/pressrelease/2026/0701.html |
