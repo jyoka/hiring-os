@@ -8,12 +8,15 @@
 
 答え: 「AI がない」は誤りだった。「自社の囲いの中だけで AI ネイティブになろうとしている」が、確かめた事実に近い。囲いの外の 4 つは、確かめた範囲では誰も出していない。ここが機会だ。
 
+この結論は、主に米国の Indeed と LinkedIn の事実による。国内の大手(リクナビ、タウンワーク、Airワーク)の AI 機能は、一次情報に届いていない(job-platforms.md「見つからなかったこと」)。
+
 ### 確かめた事実
 
-- 大手は企業向けのエージェントをすでに一般提供している。Indeed の Sourcing Assistant(米国)、LinkedIn の Hiring Assistant、Paradox の会話型 ATS(現場職)がその例だ。Indeed の応募の 70% は AI の提案から来ている(会社の発表)。[job-platforms.md「Indeed」](job-platforms.md)、[ai-hiring-tools.md「企業向け(海外)」](ai-hiring-tools.md)
+- 大手は企業向けのエージェントをすでに一般提供している。Indeed の Sourcing Assistant(米国)、LinkedIn の Hiring Assistant、Paradox の会話型 ATS(現場職)がその例だ。Indeed の応募の 70% は、AI の提案や、AI のデータにもとづくメールとポップアップなどから来ている(会社の発表)。[job-platforms.md「Indeed」](job-platforms.md)、[ai-hiring-tools.md「企業向け(海外)」](ai-hiring-tools.md)
 - 大手のエージェントは、自社の求人と自社の候補者の中で動く。Indeed の CEO は、内定、条件交渉、入社手続きの自動化を「多くの顧客のシステムと連携すると遅くなる」として後回しにした。[job-platforms.md「経営の方針」](job-platforms.md)
 - 求職者の側で「代わりに動く」機能は試験か下書きどまりだ。Indeed の Apply For Me は米国の限定試験で、確認なしの自動応募は 2026-08-04 に止めた。LinkedIn と Indeed の利用規約は、外部の bot による自動化を禁じている。[job-platforms.md「求職者向け」](job-platforms.md)
-- 外部の AI への窓口は「求人の検索」だけ開いた。Indeed と ZipRecruiter は ChatGPT アプリを出し、Indeed は MCP をベータで出した。応募は自社のサイトに戻す。[job-platforms.md「横断の論点」](job-platforms.md)
+- 求職者の側の外部の AI への窓口は「求人の検索」だけ開いた。Indeed と ZipRecruiter は ChatGPT アプリを出し、Indeed は MCP をベータで出した。応募は自社のサイトに戻す。[job-platforms.md「横断の論点」](job-platforms.md)
+- 企業の側は、自社の求人に限ったエージェントを汎用アシスタントの中に出し始めた。LinkedIn の Hiring Pro(中小企業向け)は、2026-10-21 から Claude の中で求人の原稿を作り、人の承認の後に掲載する。[general-assistants.md「Claude」](general-assistants.md)、[job-platforms.md「LinkedIn」](job-platforms.md)
 - ATS と人事のサービスは 2026 年に MCP を出し始めた(Greenhouse、Ashby、Workable、Wantedly Hire、Workday、freee、BambooHR、HiBob)。多くは「サインインした人の権限を引き継ぐ」形で、スコープはリソースと読み書きの単位と粗い。[ats.md「結論」](ats.md)、[hr-data.md「結論」](hr-data.md)
 - 汎用アシスタントの権限の単位は、アプリ、ツール、サイトのどれかだった。データの中身の種類で見せる範囲を決める設定は、調べた 9 件のどれにもなかった。[general-assistants.md「求職に関係するデータだけを見せ、ほかは遮断するはできるか」](general-assistants.md)
 - エージェントどうしの約束は A2A(v1.0.1)に集まりつつある。ただし採用の語彙(求人、応募、同意、選考の結果)は、A2A にも MCP にも RFC 9396 にもない。[a2a-and-permissions.md「結論」](a2a-and-permissions.md)
@@ -24,7 +27,7 @@
 |---|---|---|
 | 1. 企業の中の複数のシステム(ATS、人事、勤怠)をまたぎ、目的ごとに絞った権限で管理を代わりにやる bot | ATS ごと、人事のサービスごとのエージェントはある。またぐものは見つからなかった。監査ログを外から読める例も少ない | ats.md「足りないこと」、hr-data.md「足りないこと」 |
 | 2. 企業が自社の採用流程そのものを自然言語で設計する仕組み | 見つからなかった。Ashby の Custom Agents(決まった流れのエージェントを自然言語で作る)と、Metaview の管理者の設定が近い | ai-hiring-tools.md「点の自動化か、流程全体か」、ats.md「Ashby」 |
-| 3. 求職に関係するデータだけを見て、それ以外を遮断する求職者のアシスタント | 見つからなかった。既存の自動応募の拡張は、認証情報や私的な通信まで扱うと自己申告している | ai-hiring-tools.md「求職者向けの差別化」、general-assistants.md 同上 |
+| 3. 求職に関係するデータだけを見て、それ以外を遮断する求職者のアシスタント | 見つからなかった。既存の自動応募の拡張は、認証情報や私的な通信まで扱うと自己申告している。近いものは 2 つある。Workday Candidate Profile は「各企業に何を見せるかは求職者が決める」と書く(発表のみ、Workday 経由の応募に限る)。HERP Career は MCP で Claude とつなぐ。どちらの記載にも、外部のソース(メール、予定)を取り込んで求職の分だけに絞る仕組みはなかった | ai-hiring-tools.md「求職者向けの差別化」、general-assistants.md 同上、ats.md「競合の見え方」 |
 | 4. 企業の bot と求職者の bot が直接やり取りする A2A | 製品も、採用向けの標準も見つからなかった。Indeed の利用規約は「応募を企業かその Agentic AI に送る」と書き、企業側のエージェントは想定し始めている | job-platforms.md「Indeed」、a2a-and-permissions.md「見つからなかったこと」 |
 
 ### 機会を狭める条件
@@ -165,8 +168,9 @@
 - Recruit Holdings の 2026 年度 Q2 の決算資料(見た日までに見つからなかった)。
 - 国内の ATS だけの市場の大きさと、ダイレクトリクルーティングの市場の大きさ。
 - 運営者が見た Stripe のセミナー(2026-10-26)の公開資料。Stripe Sessions 2026 の Developer keynote などの公開文書で代えた。
-- 米国イリノイ州の AI Video Interview Act と HB 3773 の一次資料(ilga.gov に接続できなかった)。施行の日は確かめていない。
+- 米国イリノイ州の AI Video Interview Act と HB 3773 の一次資料(ilga.gov に接続できなかった)。施行の日は二次資料で確かめた(regulation.md「3.1」)。
 - コロラド州 SB 24-205 の、2026-06-30 の後の状態。
+- 国内の大手(リクナビ、タウンワーク、Airワーク)の、単独の AI 機能の一次情報。
 
 ### 調べ方の限り
 

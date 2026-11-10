@@ -115,6 +115,17 @@ OAuth 2.1 そのものはまだ RFC になっていない。最新は draft-ietf
 - 採用での使いどころ: 「求人を読む」「応募を出す」「面接の日程を書く」のような粗い権限。
 - 足りない点: scope は二択で中身が見えない。金額の上限、期間、条件を表せない。この点は IETF の草案も課題として挙げている（出典: https://www.ietf.org/archive/id/draft-chen-oauth-agent-authz-use-cases-05.html、見た日 2026-11-11）。
 
+### 例: Gmail の scope(2 回目のレビューの後に足した)
+
+求職者のメールから応募のメールだけを読めるかを確かめた。
+
+- Gmail の scope は、データの種類と読み書きの強さで分かれる。送信元や検索の条件で絞る scope はない（出典: https://developers.google.com/workspace/gmail/api/auth/scopes、見た日 2026-11-11）。
+- `gmail.metadata` は、ラベルとヘッダーを読めるが、本文は読めない。この scope も restricted だ（出典: 同上、見た日 2026-11-11）。
+- メッセージの一覧の `q`(Gmail の検索窓と同じ書き方の条件)は、`gmail.metadata` では使えない（出典: https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.messages/list、見た日 2026-11-11）。
+- 本文を読むには `gmail.readonly` などが要る。これらは restricted で、Google の restricted scope の審査が要る。restricted のデータをサーバーに保存するか送るなら、セキュリティの評価にも通る必要がある（出典: https://developers.google.com/workspace/gmail/api/auth/scopes、見た日 2026-11-11）。
+- 狭い scope は、アドオンの `gmail.addons.current.message.readonly` などだ。本人がアドオンの中で操作している間だけ、そのメッセージを読める（出典: 同上、見た日 2026-11-11）。
+- 推測: 「応募のメールだけを読む」は鍵では表せない。鍵の上ではメールボックス全体の読み取りになり、絞るのは受け取った側のコードだ。鍵で絞るには、本人が転送の設定で応募のメールだけを別の宛先に送るか、アドオンの形で本人が開いたメールだけを読む形になる。
+
 ### RFC 8693 トークン交換(委任)
 
 - 2020-01 公開、Standards Track（出典: https://www.rfc-editor.org/rfc/rfc8693.html、見た日 2026-11-11）。

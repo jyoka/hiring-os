@@ -2,10 +2,10 @@
 
 ## 結論
 
-- 大手の AI 投資は企業向けが先だった。Recruit は「過去 2〜3 年の AI 開発投資は企業向けの道具に集中した」と決算説明で述べた。Indeed の応募の 70% は、キーワード検索ではなく AI の提案から来ている(会社の発表)。
+- 大手の AI 投資は企業向けが先だった。Recruit は「過去 2〜3 年の AI 開発投資は企業向けの道具に集中した」と決算説明で述べた。Indeed の応募の 70% は、キーワード検索ではなく、AI の提案や、AI のデータにもとづくメールとポップアップなどから来ている(会社の発表)。
 - 企業向けは「ソーシングと書類選考の自動化」が一般提供に入った。Indeed の Sourcing Assistant と Smart Screening、LinkedIn の Hiring Assistant がある。ただし、どれも自社の求人と自社の候補者の範囲で動く。内定、条件交渉、入社手続きは対象外で、Indeed の CEO は「多くの企業のシステムと連携すると遅くなる」と述べた。
 - 求職者向けの「代わりに動く」機能は、まだ試験か下書きどまりだった。Indeed の Apply For Me は米国の限定試験で、自動応募のモードは 2026-08 に止めた。LinkedIn と Indeed の利用規約は、外部の bot による自動化を禁じている。
-- 外部の AI への窓口は、求職者向けの「求人の検索」だけ開いた。Indeed と ZipRecruiter は ChatGPT アプリを出した。Indeed は Claude 向けの MCP サーバーをベータで出した。応募はどれも自社のサイトに戻す。企業向けの API は、ATS の提携先にだけ開いている。
+- 外部の AI への窓口は、求職者向けの「求人の検索」だけ開いた。Indeed と ZipRecruiter は ChatGPT アプリを出した。Indeed は Claude 向けの MCP サーバーをベータで出した。応募はどれも自社のサイトに戻す。企業向けの API は、ATS の提携先にだけ開いている。企業向けでは、LinkedIn が中小企業向けの Hiring Pro を Claude の中で使えるようにした(2026-10-21)。Hiring Pro の求人だけが対象だ(general-assistants.md「Claude」)。
 - 国内の大手(ビズリーチ、エン、パーソル、ディップ)は、求人票やスカウト文の生成、面接練習など、工程ごとの AI 機能が中心だった。国内の求人大手が ChatGPT アプリや MCP を出したのは、確かめた範囲では Indeed Japan だけだった。
 - 企業の bot と求職者の bot が直接やり取りする仕組み(A2A)を出した大手は見つからなかった。Indeed の利用規約は「応募を企業かその Agentic AI に送る」と書いており、企業側のエージェントは想定し始めている。
 
@@ -16,7 +16,7 @@
 | Indeed Sourcing Assistant(Smart Sourcing の機能) | 企業向け | 自然言語で候補者像を受け、常に探して応募を誘う。送る文は採用担当が承認する | 一般提供(米国、Smart Sourcing の Professional と Enterprise) | Indeed の 3.7 億件の Sourceable Profiles を見る。ATS とは Indeed Apply の同期でつなぐ | https://www.indeed.com/news/releases/indeeds-ai-powered-sourcing-assistant-helps-employers-hire-over-30-faster?co=US | 2026-11-11 |
 | Indeed Smart Screening(Smart Fit Score) | 企業向け | 企業の基準で応募者に 0〜100 の点を付け、要約を出す | 一般提供(提供範囲の一次情報なし) | 求職者が出した情報だけで採点し、他社データは使わない(会社の発表) | https://www.indeed.com/news/releases/introducing-indeeds-smart-fit-score?co=US | 2026-11-11 |
 | Indeed Talent Scout | 企業向け | 会話型のエージェント。候補者の一覧、スカウト文の下書き、市場の情報 | 不明(米国のみ。段階の表示なし) | Premium Sponsored Jobs か Smart Sourcing が必要。Workable などの ATS からはパートナートークンでつなぐ | https://www.indeed.com/employers/talentscout | 2026-11-11 |
-| Indeed Career Scout | 求職者向け | 求人の推薦、応募の事前入力、履歴書の調整、面接練習 | 一般提供(2025-09 の発表。2026 年の提供国は不明) | Indeed のプロフィールと会話の内容を使う | https://www.indeed.com/news/releases/indeed-introduces-new-suite-of-hiring-products-career-scout-talent-scout-premium-sponsored-jobs-and-indeed-connect?co=US | 2026-11-11 |
+| Indeed Career Scout | 求職者向け | 求人の推薦、応募の事前入力、履歴書の調整、面接練習 | 不明(2025-09-10 の発表に段階の表示なし。2026 年の段階と提供国も不明) | Indeed のプロフィールと会話の内容を使う | https://www.indeed.com/news/releases/indeed-introduces-new-suite-of-hiring-products-career-scout-talent-scout-premium-sponsored-jobs-and-indeed-connect?co=US | 2026-11-11 |
 | Indeed Apply For Me | 求職者向け | プロフィールから応募の文面を下書きする | ベータ(米国の限定試験。自動応募は 2026-08-04 に停止) | 応募数の上限あり。使っていない人の応募は止める | https://www.indeed.com/news/releases/indeed-tests-apply-for-me-job-search?co=US | 2026-11-11 |
 | Indeed アプリ(ChatGPT) | 求職者向け | ChatGPT の中で Indeed の求人を検索し、表示する | 一般提供(米国 2026-02-10、日本を含む 14 か国 2026-05-14) | Indeed のアカウントで連携する。詳細の確認と応募は Indeed で行う | https://d341ezm4iqaae0.cloudfront.net/press/sites/2/2026/05/14094032/20260514_uP5HZ.pdf | 2026-11-11 |
 | Indeed MCP サーバー | 求職者向け | 求人の検索と詳細、本人の履歴書、企業の評判データを AI に渡す | ベータ(Claude のコネクタのみ) | Indeed のアカウントでログインする。OAuth の範囲の記載なし | https://docs.indeed.com/mcp | 2026-11-11 |
@@ -61,7 +61,7 @@
 ### 求職者向け
 
 - Career Scout は Indeed アプリの中の AI のキャリアコーチ。求人の推薦、応募の事前入力、履歴書の調整、面接練習をする（出典: https://www.indeed.com/news/releases/indeed-introduces-new-suite-of-hiring-products-career-scout-talent-scout-premium-sponsored-jobs-and-indeed-connect?co=US、見た日 2026-11-11）。
-- Apply For Me は 2026-07-07 に始めた限定試験。米国の一部の求職者だけが対象で、「早い段階の試験で、本格提供ではない」と書いている（出典: https://www.indeed.com/news/releases/indeed-tests-apply-for-me-job-search?co=US、見た日 2026-11-11）。
+- Apply For Me は 2026-07-07 に発表した限定試験。試験を始めた日はページに書かれていない。米国の一部の求職者だけが対象で、「早い段階の試験で、本格提供ではない」と書いている（出典: https://www.indeed.com/news/releases/indeed-tests-apply-for-me-job-search?co=US、見た日 2026-11-11）。
 - 2026-08-04 の更新で、確認なしに送る自動のモードを止めた。今は下書きを本人が確かめてから送るモードに絞っている（出典: 同上、見た日 2026-11-11）。
 - 応募数に上限があり、本人が使っていないと応募を止める（出典: 同上、見た日 2026-11-11）。
 
@@ -117,6 +117,7 @@
 - 提供の段階は一般提供。LinkedIn Recruiter の追加の契約で、7 言語に対応する（出典: 同上、見た日 2026-11-11）。
 - 権限: 「指示した作業だけをする」と書き、支援する求人を選べる。ATS 連携は相手により異なる（出典: 同上、見た日 2026-11-11）。
 - 中小企業向けには、Hiring Pro という AI エージェントが英語で世界に提供されている。AI 面接と会話型の画面を、今後数か月で出すとしている（出典: https://news.linkedin.com/2026/LinkedIn-Research-Talent-2026?、見た日 2026-11-11）。
+- Hiring Pro は 2026-10-21 から Claude の中で使える。Claude が求人の原稿を作り、人が直して承認すると LinkedIn に載る。Hiring Pro の求人だけが対象だ。「候補者を素早く絞る」とも書くが、その段が Claude の中かは書かれていない（出典: https://news.linkedin.com/2026/making-it-easier-for-small-businesses-to-hire-on-linkedin、見た日 2026-11-11）。詳しくは general-assistants.md の「Claude」。
 - 求職者向け: AI の求人検索は、自然な言葉で探せる。毎日 130 万人以上が使い、5 言語で世界に展開中（出典: 同上、見た日 2026-11-11）。(会社の発表)
 - Job Match は、自分と求人の合い具合を示す。米国の Premium 会員が「合わない」求人に応募する率を 10% 下げた（出典: 同上、見た日 2026-11-11）。(会社の発表)
 - API: 求人掲載、Apply Connect、Apply with LinkedIn、CRM Connect、Recruiter System Connect がある（出典: https://learn.microsoft.com/en-us/linkedin/talent/、見た日 2026-11-11）。
@@ -172,6 +173,7 @@
 | 求職者の AI からの応募 | 不可。自社のサイトに戻す。外部の自動化は規約で禁止 | 規約で bot を禁止 | 不可。自社のサイトに戻す | 見つからなかった |
 | 企業の ATS からの求人掲載と応募の受け取り | Job Sync API、Indeed Apply(ATS の提携先のみ) | 求人掲載 API、Apply Connect(提携先のみ) | ATS 連携 180 以上(API の公開の一次情報は未確認) | Indeed PLUS 経由(ATS から配信) |
 | 企業の AI エージェントの受け入れ | 規約に「企業かその Agentic AI に送る」 | 見つからなかった | 見つからなかった | 見つからなかった |
+| 汎用アシスタントの中の企業向けのエージェント | 見つからなかった | Hiring Pro を Claude の中で提供(2026-10-21 から。Hiring Pro の求人だけ) | 見つからなかった | 見つからなかった |
 
 出典は各節の記載のとおり。
 
@@ -181,10 +183,11 @@
 
 ### 確かめられた事実
 
-- 大手は「AI がない」のではない。Indeed は応募の 70% を AI の提案から生み、AI のソーシングと選考を有料で売り、売上を伸ばしている(会社の発表)。
+- 大手は「AI がない」のではない。Indeed は応募の 70% を AI の提案や AI のデータにもとづくメールなどから生み、AI のソーシングと選考を有料で売り、売上を伸ばしている(会社の発表)。
 - ただし、大手のエージェントは自社の求人と自社の候補者の中で動く。Indeed の CEO は、内定から入社までの自動化を「多くの顧客のシステムと連携すると遅くなる」として後回しにした。
 - 求職者が自分の AI に応募を任せることを、大手は規約で止めている。Indeed は自社の Apply For Me だけを例外にし、それも自動応募のモードを止めた。
-- 外部の AI(ChatGPT、Claude)への窓口は、求人の検索に限られる。応募と企業とのやり取りは自社のサイトに戻す設計だった。
+- 求職者の側の外部の AI(ChatGPT、Claude)への窓口は、求人の検索に限られる。応募と企業とのやり取りは自社のサイトに戻す設計だった。
+- 企業の側は、自社の求人に限ったエージェントを汎用アシスタントの中に出し始めた。LinkedIn の Hiring Pro は Claude の中で求人の原稿を作り、人の承認の後に掲載する(2026-10-21)。発表は「候補者を素早く絞る」とも書くが、その段が Claude の中か LinkedIn の上かは書かれていない。
 - 企業向けの API は ATS の提携先にだけ開いている。中小企業が自分の bot に権限を渡して管理させる入口は、大手の側には見つからなかった。
 - 国内の大手は、求人票やスカウト文の生成、面接練習など、工程ごとの機能が中心だった。
 
