@@ -1,8 +1,8 @@
-# 出典の確かめ(15 件と追加の 3 件)
+# 出典の確かめ(33 件)
 
-調べものを書き終えた後、出典から 15 件を選んで開き直し、書いた主張を支えているかを確かめた。開き直した日はすべて 2026-11-11。
+調べものを書き終えた後、出典を選んで開き直し、書いた主張を支えているかを確かめた。合わせて 33 件だ。#1〜#18 は初版の調べもの(2026-11-11 に開き直した)、#19〜#33 は第 2 版で足した 3 ファイル(integrations-company.md、integrations-seeker.md、business-model.md。2026-11-18 に開き直した)の分だ。
 
-## 選び方
+## 選び方(#1〜#15)
 
 Goal の順に従って選んだ。7 つのファイルから選んでいる。
 
@@ -43,9 +43,38 @@ Goal の順に従って選んだ。7 つのファイルから選んでいる。
 | 17 | https://calcivilrights.ca.gov/2025/06/30/civil-rights-council-secures-approval-for-regulations-to-protect-against-employment-discrimination-related-to-artificial-intelligence/ | カリフォルニア州の規則は、自動判断のデータを含む雇用の記録を 4 年以上残す。2025-10-01 施行(regulation.md「3.1」。PRD の 5.3 節と U5) | 支えている | なし。「maintain employment records, including automated-decision data, for a minimum of four years」と「set to go into effect on October 1, 2025」があった。「agent」の定義の文言はこのページにない(regulation.md の記載のとおり) | 支えている |
 | 18 | https://www.ppc.go.jp/files/pdf/190826_houdou.pdf 、https://www.ppc.go.jp/files/pdf/191204_houdou.pdf 、https://www.mhlw.go.jp/stf/kaiken/daijin/0000194708_00148.html | リクナビ DMP フォロー: 2019-08-26 に勧告と指導(7,983 人)、2019-12-04 に改めて勧告(合わせて 26,060 人、「法の趣旨を潜脱した」)と利用企業への指導。2019-09-06 に東京労働局が職業安定法に基づく指導(risks.md「リクナビ DMP フォロー」。PRD の D6) | 支えている | なし。PDF は文字を取り出して、日付(令和元年 8 月 26 日、12 月 4 日)、人数、「人生をも左右しうる」「潜脱」、サービスの廃止を確かめた。会見の記録で、9 月 6 日の指導と「職業紹介にあたるもの」の発言を確かめた | 支えている |
 
+## 新しい 3 ファイルの確かめ(#19〜#33)
+
+integrations-company.md、integrations-seeker.md、business-model.md から 15 件を選んだ。PRD が根拠に引く主張、料金と法の区分、OS の決まりの順に選び、開き直した日はすべて 2026-11-18。
+
+| # | URL | 主張(ファイルと節) | 最初の判定 | 直したこと | 直した後の判定 |
+|---|---|---|---|---|---|
+| 19 | https://www.apideck.com/integrations/country/japan/hris.md | Apideck は SmartHR、KING OF TIME、freee人事労務、ジョブカンなど国内のサービスを「まだ対応していない」と明記(integrations-company.md「結論」「Apideck」「統合 API の範囲、粗さ、料金の形」「このプロダクトへの示唆」。PRD の 4.3 節と U15) | 支えている | なし。見出し「Notable local systems not yet supported」の下に、SmartHR、KING OF TIME、freee HR、Money Forward Cloud Payroll、Jobcan、jinjer、COMPANY があった。対応は Workday など 7 つ | 支えている |
+| 20 | https://www.indeed.com/legal | 利用規約(2026-09-29 更新)の D.21 が「AI or Agentic AI」を含む自動のシステムでのアクセスとデータの採掘を禁じる。D.22(4) の Permitted AI Connector(integrations-company.md「結論」「規約の問題」「このプロダクトへの示唆」。PRD の 1.4 節、4.3 節、D15) | 支えている | なし。「Last Updated: September 29, 2026」。Section D の 21「Site Rules」に「Use any automated system (bots, scrapers, spiders, AI or Agentic AI) to access, data-mine」があった。22 の 4 つ目「Third Party Automations」に「Permitted AI Connector」「is in Beta」「suspend or terminate access at any time」があった | 支えている |
+| 21 | https://smarthr.jp/terms/terms-smarthr/ | 利用規約(最終改定 2026-05-26)の第 12 条 14 号がスクレイピングを禁じる。第 10 条の 2 はスクリプトや bot での AI 機能へのアクセスを禁じる。第 17 条は API 連携サービスの結果を利用ユーザーの責任とする(integrations-company.md「結論」「規約の問題」「このプロダクトへの示唆」。PRD の 1.4 節、4.3 節、D15) | 支えている | なし。変更履歴の最後は「2026年05月26日改定」。第 12 条の 14 番目の号が「スクレイピング等、手段を問わず、本サービスの仕様若しくは情報、又は他のユーザーの情報を収集する行為」。第 10 条の 2 に「自動化された手段(スクリプト、ボット等)を用いてAI機能にアクセスし」、第 17 条に「全ての結果について自ら責任を負う」があった | 支えている |
+| 22 | https://apidocs.hibob.com/docs/hibob-mcp-server | HiBob は 2026-11-09 から、サービス用の利用者での MCP の新しい接続を止めた。今の接続も今後止まりうる(integrations-company.md「結論」「HiBob」「このプロダクトへの示唆」。PRD の 4.1 節) | 支えている | なし。「As of November 9, 2026, new service user connections are blocked.」と、今の接続は「will keep working for now」、サービス用の利用者は「will stop being supported in the future」があった | 支えている |
+| 23 | https://docs.indeed.com/indeed-apply/ats 、https://docs.indeed.com/legal-terms/additional-api-terms-and-guidelines | Indeed Apply は ATS の提携先向けで、開発者契約が要る。統合は約 6 週間。追加の API 規約は API の許可を Indeed の裁量とする(integrations-company.md「結論」「比べる表」「Indeed」「このプロダクトへの示唆」) | 支えている | なし。「This guide is for applicant tracking system (ATS) partners.」、前提に「A signed Developer Agreement」、「Integrations usually take about six weeks」があった。規約に「entirely in Indeed's sole discretion」「may restrict or terminate your API access or API Key at any time」があった | 支えている |
+| 24 | https://slack.com/terms-of-service/api 、https://docs.slack.dev/changelog/2025/05/29/rate-limit-changes-for-non-marketplace-apps | Slack は Marketplace 外の商用アプリの履歴の取得を 1 分 1 回・15 件に絞った(2025-05-29 以降)。API の規約(発効 2025-10-10)は LLM の学習と一括の書き出しを禁じる(integrations-company.md「結論」「比べる表」「Slack」「このプロダクトへの示唆」。PRD の 1.4 節、4.3 節) | 支えている | なし。変更履歴に「limited to 1 request per minute」と `limit` の上限「15 objects」、対象は 2025-05-29 以降に作ったアプリと新しいインストールとあった。規約は「発効日 : 2025 年 10 月 10 日」。組織の外に出すアプリの禁止に「API データを使用して大規模言語モデルをトレーニングすること」と「一括でエクスポートすること」があった | 支えている |
+| 25 | https://raw.githubusercontent.com/apple/device-management/release/mdm/profiles/com.apple.TCC.configuration-profile-policy.yaml | macOS の構成プロファイルは画面の収録(ScreenCapture)の許可を与えられず、拒否だけができる(integrations-company.md「結論」「端末の管理(macOS)」「このプロダクトへの示唆」。PRD の 4.3 節) | 支えている | なし。ScreenCapture に「A profile can't grant access to the contents; it can only deny it.」があった。`AllowStandardUserToSetSystemService` は ListenEvent と ScreenCapture だけに効く | 支えている |
+| 26 | https://developers.google.com/identity/protocols/oauth2/production-readiness/restricted-scope-verification 、https://developers.google.com/workspace/gmail/api/auth/scopes | restricted のデータをサーバーに保存か送信するなら、第三者のセキュリティ評価を 12 か月ごとに受ける。gmail.readonly と gmail.metadata は restricted、gmail.send は sensitive(integrations-company.md「結論」「比べる表」「Gmail(Google Workspace)」「このプロダクトへの示唆」、integrations-seeker.md「結論」「比べる表」「4. メールの API」。PRD の 4.3 節、5.3 節) | 一部 | 評価の条件(「If you store or transmit restricted scope data on servers」)、「at least every 12 months」、scope の区分は合っていた。ただし seeker の結論の「本文を読む scope がすべて restricted」は誤り。`gmail.addons.current.message.readonly`(「View your email messages when the add-on is running.」)は Sensitive の欄にあった。seeker の結論と比べる表、company の結論を「本文を広く読む scope(gmail.readonly など)は restricted」に直した。「年 1 回」の書き方も「12 か月ごと」にそろえた(seeker の結論、company の比べる表と示唆) | 支えている |
+| 27 | https://support.google.com/googleplay/android-developer/answer/10964491?hl=en | Google Play は AccessibilityService で自律で計画して動く使い方を禁じ、アシスタントはアクセシビリティの道具に当たらない(integrations-seeker.md「結論」「比べる表」「Google Play」「作れない道」。PRD の 1.4 節、4.3 節、D15) | 支えている | なし。「Any use of the Accessibility API that enables an app to autonomously initiate, plan, and execute actions or decisions is strictly prohibited.」と、当たらない例に「automation tools, assistants」があった。認められたアクセシビリティの道具は例外 | 支えている |
+| 28 | https://support.google.com/googleplay/android-developer/answer/9888170?hl=en | Google Play は SMS と通話履歴の権限を既定の SMS、電話、アシスタントのアプリに限る(integrations-seeker.md「結論」「比べる表」「Google Play」「作れない道」。PRD の 1.4 節、4.3 節) | 一部 | 通話履歴は「default Phone or Assistant handler」、SMS は「default SMS or Assistant handler」で、権限ごとに違った。seeker の結論の「SMS と通話履歴は既定の SMS かアシスタントのアプリに限る」は通話履歴の分が誤り。結論と「Google Play」の節を権限ごとに分けて書き直した | 支えている |
+| 29 | https://developer.android.com/ai/appfunctions | 他社の AppFunctions を呼ぶ権限は、認められたシステムのアシスタントだけに与える(integrations-seeker.md「結論」「比べる表」「2. Android」の「ほかのアプリの中身」「作れない道」。PRD の 4.3 節、6 節) | 支えている | なし。FAQ に「requires the privileged EXECUTE_APP_FUNCTIONS permission, which Android grants only to authorized system assistants」があった。「Experimental」の表示と Android 16 以上も確かめた | 支えている |
+| 30 | https://www.mhlw.go.jp/content/001328411.pdf | 募集情報等提供の成果報酬型の料金徴収は禁止されていない。2025-04-01 から求職者への金銭等の提供は原則禁止。料金と違約金の事前の明示(business-model.md「結論」「1. 収益の形ごとの実例」「2. 収益の形と職業安定法の区分」「どの案でも先に決めること」。PRD の U4) | 一部 | PDF の文字を取り出して読んだ。「成果報酬型の料金徴収を禁止したものではありません」、「令和７年４月１日から」、ポイントも「原則禁止の対象」、例外の「500円程度の電子ギフト券」があった。ただし結論の「採用の報告を集めるために求職者へお金やギフト券を渡すことは原則禁止」は目的を狭めていた。資料は「様々な趣旨・目的・態様で行われている労働者への金銭等の提供」を対象とする。「結論」を「目的を問わず原則禁止」に直した。明示の方法も、資料は「書面または電子メールその他の適切な方法」だった。「どの案でも先に決めること」の「書面か電子メールで」を「書面か電子メールなど企業が読み返せる方法で」に直した | 支えている |
+| 31 | https://www.mhlw.go.jp/content/001250191.pdf | Q&A 問 5-1(応募に関係ないシステム利用料は第 43 条の 3 で禁止されない)、問 9-1(応募時に雇用契約が成立するサービスは職業紹介)、問 9-2、問 9-6、問 1-6(business-model.md「結論」「2. 収益の形と職業安定法の区分」「このプロダクトへの示唆」。PRD の U4) | 支えている | なし。PDF の文字を取り出して読んだ。問 5-1 に「応募に関係なくシステム利用料や登録料として料金を徴収することは同条で禁止されるものではありません」。問 9-1 に「応募・連絡した時点で原則として雇用契約が成立するようなサービス」。問 9-2 に看護師資格の例。問 9-6 に「採用可能性が高いと思われる求職者の連絡を当該者の判断により優先的に求人企業に届ける」。問 1-6 に「メールアドレス、サイトの閲覧履歴」があった | 支えている |
+| 32 | https://www.baitoru.com/solution/?p=344 | 面接コボットは 1 か月 30,000 円、12 か月 180,000 円(税抜)、月の応募 999 件まで(business-model.md「結論」「比べる表」「1. 収益の形ごとの実例」「このプロダクトへの示唆」。PRD の H18、U4) | 支えている | なし。料金の表(税抜)に 1 か月 30,000 円、3 か月 75,000 円、6 か月 120,000 円、12 か月 180,000 円があった。表は月の応募 999 件までのプランで、1,000 件以上は別のプランで相談 | 支えている |
+| 33 | https://www.merge.dev/pricing 、https://www.tryfinch.com/pricing | Merge は月 650 ドルで 10 接続まで(3 つ無料、超過 1 接続 65 ドル)。Finch の Starter は 1 接続につき月 65 ドル、15 接続まで(business-model.md「結論」「比べる表」「1. 収益の形ごとの実例」、integrations-company.md「比べる表」「Merge」「Finch」「統合 API の範囲、粗さ、料金の形」「このプロダクトへの示唆」。PRD の 4.3 節、U4) | 一部 | 金額は合っていた。Merge は「Link 3 production Linked Accounts for free」「Pay $650/month for up to 10 total production Linked Accounts. $65 per Linked Account after.」、Finch は「$65/month per connection」「Up to 15 connections」だった。ただし integrations-company.md は Merge の Linked Account を「社」と書き、料金の形を「顧客の数で払う(Merge、Finch、Apideck、Kombo)」とまとめていた。ページが数えるのは接続で、会社の数ではない。比べる表、「Merge」の節、「統合 API の範囲、粗さ、料金の形」の表と本文、「このプロダクトへの示唆」を「接続」に直した。Apideck と Kombo は顧客の数のまま | 支えている |
+
 ## まとめ
 
-- 15 件のうち 11 件は最初から支えていた。4 件は「一部」で、本文を直して「支えている」にした。#8 は最初「支えている」としたが、2 回目のレビューで「一部」と分かった。消した主張はない。
-- 追加の 3 件(#16〜#18)は、すべて最初から支えていた。
-- 選んだファイル: regulation.md(3 件)、market.md(3 件)、job-platforms.md(4 件)、ats.md(2 件)、ai-hiring-tools.md、general-assistants.md、a2a-and-permissions.md(各 1 件)。
-- 確かめていないこと: この表の 18 件の外の主張は、各ファイルを書いた時に一度開いただけで、開き直していない。
+- 33 件のうち、最初から支えていたのは 25 件だった。8 件は「一部」で、本文を直して「支えている」にした。消した主張はない。
+- #1〜#15: 11 件は最初から支えていた。4 件は「一部」で、本文を直して「支えている」にした。#8 は最初「支えている」としたが、2 回目のレビューで「一部」と分かった。
+- #16〜#18(追加の 3 件): すべて最初から支えていた。
+- #19〜#33(新しい 3 ファイル): 11 件は最初から支えていた。4 件(#26、#28、#30、#33)は「一部」で、本文を直して「支えている」にした。
+  - #26: Gmail の本文を読む scope のうち、アドオンの scope は sensitive だった。「本文を広く読む scope は restricted」に直した。
+  - #28: 通話履歴の条件は既定の電話かアシスタントで、SMS とは違った。権限ごとに分けて書いた。
+  - #30: 求職者への金銭等の提供の禁止は、目的を問わない。目的を狭めた書き方を直した。
+  - #33: Merge の料金が数えるのは接続で、会社の数ではない。「接続」に直した。
+- 選んだファイル(#1〜#18): regulation.md(4 件)、market.md(3 件)、job-platforms.md(4 件)、ats.md(2 件)、ai-hiring-tools.md、general-assistants.md、a2a-and-permissions.md、stripe-modular-agentic.md、risks.md(各 1 件)。
+- 選んだファイル(#19〜#33): integrations-company.md(9 件、うち #26 と #33 は他のファイルと共通)、integrations-seeker.md(4 件)、business-model.md(4 件)。
+- 確かめていないこと: この表の 33 件の外の主張は、各ファイルを書いた時に一度開いただけで、開き直していない。
