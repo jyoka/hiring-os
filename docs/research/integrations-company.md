@@ -18,7 +18,7 @@ hiring-os は企業側のシステム(人事労務、勤怠、給与、評価、
 - 画面を操作する bot は、規約とぶつかる可能性が高い。Indeed の規約は「AI or Agentic AI」を含む自動のアクセスを禁じ、SmartHR の規約はスクレイピングを禁じている。画面の操作は担当者の権限の全体で動き、監査で本人と区別しにくい。
 - MCP は「担当者本人のログインと権限」の形にそろってきた。HiBob は 2026-11-09 から、サービス用の利用者での MCP の新しい接続を止めた。ADP も組織全体の権限は「coming soon」だった。推測: 担当者の PC で、その人の権限で読む hiring-os の形は、この流れに合う。
 - メール、予定、文書には狭い口がある。予定の空き(Google の freeBusy、Microsoft の getSchedule)、Google Drive の `drive.file`、SharePoint の Selected scope、Exchange の RBAC for Applications だ。逆に Gmail の本文を広く読む scope(`gmail.readonly` など)は restricted で、サーバーに置くなら 12 か月ごとの第三者の評価が要る。Slack は Marketplace 外の商用アプリの履歴の取得を 1 分 1 回に絞り、LLM の学習を禁じた。
-- 担当者の PC に bot を入れると、企業の IT の承認が 3 つ重なる。端末(Intune の App Control、macOS の MDM)、OAuth アプリの管理者の同意(Microsoft Entra、Google Workspace)、チャットのアプリの承認(Slack)だ。macOS では、画面の収録の許可を MDM で配れず、担当者本人がオンにする。国内の大企業では、セキュリティチェックシートへの回答が導入の条件になる例が増えている(報道)。
+- 担当者の PC に bot を入れると、企業の IT の承認が最大 4 段重なる。1〜3 段は製品の仕組みの承認で、端末(Intune の App Control、macOS の MDM)、OAuth アプリの管理者の同意(Microsoft Entra、Google Workspace)、チャットのアプリの承認(Slack)だ。macOS では、画面の収録の許可を MDM で配れず、担当者本人がオンにする。4 段目は事業者の審査だ。国内の大企業では、セキュリティチェックシートへの回答が導入の条件になる例が増えている(報道)。
 
 ## 比べる表
 
@@ -413,8 +413,11 @@ hiring-os は企業側のシステム(人事労務、勤怠、給与、評価、
   - 出せる項目の一覧は書かれていなかった。
 - 応募の通知メールの仕様の一次情報は見つからなかった。
 
-### Airワーク 採用管理(リクルート)
+### Airワーク 採用管理(Indeed Japan)
 
+- 提供する事業者は Indeed Japan株式会社だ。公式の「Airワーク 採用管理に関する特約事項」(2025-12-16 制定、2026-04-01 改定)は、当サービスを提供する「当社」を Indeed Japan株式会社と書く(出典: https://cdn.p.recruit.co.jp/terms/aws-t-1027/index.html、見た日 2026-11-18)。
+- 2025-04 から運営会社が Indeed Japan株式会社に変わったことは、販売代理店のお知らせ(2025-03-30)で確かめた。前の運営会社は、このお知らせに書かれていない(出典: https://co-do.jp/news/oshirase/air%E3%83%AF%E3%83%BC%E3%82%AF-%E6%8E%A1%E7%94%A8%E7%AE%A1%E7%90%86%E3%81%AE%E9%81%8B%E5%96%B6%E4%BC%9A%E7%A4%BE%E5%A4%89%E6%9B%B4%E3%81%AE%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B/、見た日 2026-11-18)。(会社の発表)
+- Indeed の公式の移管の告知は見つからなかった。
 - 公式の機能一覧に、無料の「応募者一覧のダウンロード」がある。「応募者情報をCSVでダウンロードできます」と書く(出典: https://airregi.jp/work/recruitment/function、見た日 2026-11-18)。
 - 同じページで、他の媒体からの応募は手で登録する形だった。自動の取り込みの記載はない(出典: 同上、見た日 2026-11-18)。
 - Indeed への求人の自動連携は書いている(出典: 同上、見た日 2026-11-18)。
@@ -639,6 +642,7 @@ hiring-os は企業側のシステム(人事労務、勤怠、給与、評価、
 - Apple の構成プロファイルでは、画面の収録(ScreenCapture)とキー入力の監視(ListenEvent)を許可できない。「A profile can't grant access to the contents; it can only deny it」(出典: https://raw.githubusercontent.com/apple/device-management/release/mdm/profiles/com.apple.TCC.configuration-profile-policy.yaml、見た日 2026-11-18)。
 - できるのは、管理者でない利用者が自分で許可できるようにする設定(`AllowStandardUserToSetSystemService`)だけ(出典: 同上、見た日 2026-11-18)。
 - Accessibility は設定できる。ただし macOS 27.0 では通知が出て、利用者が設定を変えられる(出典: 同上、見た日 2026-11-18)。
+- 同じ出典で、Accessibility、Camera、Microphone、SpeechRecognition、BluetoothAlways などの鍵は macOS 27.0 で廃止(deprecated)の扱いだ。代わりに、宣言型の管理の構成 `com.apple.configuration.app.settings` の `Privacy` の鍵を使うよう書く。ScreenCapture と ListenEvent には、廃止の記載がない(出典: 同上、見た日 2026-11-18)。移った先の `Privacy` の鍵で何を許可できるかは調べていない。
 - この設定は監視対象(supervised)の端末で、MDM から入れる(出典: https://support.apple.com/guide/deployment/privacy-preferences-policy-control-payload-dep38df53c2a/web、見た日 2026-11-18)。
 - Jamf の手順は調べていない。推測: Jamf も同じ Apple の仕組みを使うので、画面の収録は担当者本人の許可が要る。
 
@@ -689,7 +693,7 @@ hiring-os は企業側のシステム(人事労務、勤怠、給与、評価、
 - 推測: 2 番目は SmartHR。従業員のマスターとして広く使われ、API は無料で手続きもない。ただし勤怠と給与は別のサービスにある。
 - 推測: 3 番目は ATS の HERP Hire。応募の追加と評価の記入まで API でできる。採用の bot には一番近いデータだ。HRMOS採用は API の提供を待つ。
 - 推測: 勤怠は KING OF TIME とジョブカンが大きいが、どちらも申請や問い合わせが要る。先に申請だけ出しておくとよい。
-- 推測: 店舗のアルバイト向けは、Airシフトに API がない。bot が画面や CSV を読む道か、freee 経由の道になる。海外の 7shifts と Deputy は API が開いている。
+- 推測: 店舗のアルバイト向けは、Airシフトに API がない。道は CSV(画面からの書き出し)だけになる。画面を操作する bot は、PRD の D15 で使わない。freee人事労務へ送られるのは概算人件費で、勤怠は送られない。Airシフトの CSV の書き出しの中身は、この調べでは確かめていない。海外の 7shifts と Deputy は API が開いている。
 
 ### 人事のシステムと ATS(推測: 統合 API か自前か)
 
@@ -712,7 +716,7 @@ hiring-os は企業側のシステム(人事労務、勤怠、給与、評価、
 
 ### 求人媒体、メール、予定、チャット、文書、IT の承認(推測)
 
-- hiring-os が「担当者の PC の bot」を使うと、IT の承認は 3 つ重なる。端末(Intune か MDM)、OAuth アプリの同意(Entra か Google)、チャット(Slack のアプリの承認)。
+- hiring-os が「担当者の PC の bot」を使うと、IT の承認は最大 4 段重なる。端末(Intune か MDM)、OAuth アプリの同意(Entra か Google)、チャット(Slack のアプリの承認)の 3 つに、事業者の審査(セキュリティチェックシート。報道)が加わる。
 - 最初につなぐ相手は、規約と承認の軽い順に選ぶのがよい。候補は、担当者本人の OAuth による予定の空き(freeBusy、getSchedule)、`drive.file`、Exchange の RBAC で絞ったメールボックス。
 - Gmail の本文を読むには restricted scope の審査が要る。初期は、担当者が応募の通知メールを専用の宛先に転送する形か、Gmail アドオンの狭い scope で避けられる。
 - Slack は Marketplace に載るまで、他社のワークスペースの履歴を実用の速さで読めない。初期は通知の投稿(書き込み)に絞るのが現実的だ。

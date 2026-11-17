@@ -53,6 +53,8 @@
 
 答え: 機会(上の 4 つ)は残る。ただし、一番の危険は連携だと分かった。国内のつなぐ口は思ったより狭い。「全部を自動で集める」は、企業の側でも求職者の側でも成り立たない所がある。収益は、店舗が払う月額(道具)が最初の体験に一番合う(推測)。
 
+初版の示唆のうち 2 つは、第 2 版の決定で置き換えた。[ats.md](ats.md) の「ATS 自体を置き換える選択が要る」は、企業側のシステムを作らない決定(PRD の D14)で置き換えた。[market.md](market.md) の「最初の収益の当てどころは人材紹介の手数料」は、店舗の月額を勧める比べ(PRD の U4)で置き換えた。
+
 ### 企業の側の連携(integrations-company.md)
 
 - 国内の人事労務、勤怠、給与は、統合 API では届かない。Apideck は SmartHR、KING OF TIME、freee人事労務、ジョブカンを「まだ対応していない」と明記していた。国内は自前でつなぐ前提になる。[integrations-company.md「統合 API の範囲、粗さ、料金の形」](integrations-company.md)
@@ -61,7 +63,7 @@
 - 画面を操作する bot は規約とぶつかりうる。Indeed の規約は「AI or Agentic AI」を含む自動のアクセスを、SmartHR の規約はスクレイピングを禁じている。[integrations-company.md「規約の問題」](integrations-company.md)
 - MCP は「担当者本人のログインと権限」の形にそろってきた。HiBob は 2026-11-09 から、サービス用の利用者での MCP の新しい接続を止めた。[integrations-company.md「HiBob」](integrations-company.md)
 - メール、予定、文書には狭い口がある(予定の空き、`drive.file`、SharePoint の Selected scope、Exchange の RBAC for Applications)。Slack は Marketplace 外の商用アプリに厳しい。[integrations-company.md「メール」「予定」「チャット」「文書の置き場」](integrations-company.md)
-- 担当者の PC に bot を入れると、端末、OAuth の同意、チャットのアプリ、事業者の審査の承認が重なる。macOS では、画面の収録の許可を MDM で配れない。[integrations-company.md「担当者の PC に bot を入れるときの IT の承認」](integrations-company.md)
+- 担当者の PC に bot を入れると、端末、OAuth の同意、チャットのアプリ、事業者の審査の承認が、最大 4 段重なる。macOS では、画面の収録の許可を MDM で配れない。[integrations-company.md「担当者の PC に bot を入れるときの IT の承認」](integrations-company.md)
 
 ### 求職者のスマホ(integrations-seeker.md)
 
@@ -192,7 +194,7 @@
 | [regulation.md](regulation.md) | 日本、EU、米国の採用と AI の法と規制 | 権限とプライバシー、未決の論点 |
 | [hr-data.md](hr-data.md) | 人事労務、勤怠、給与、評価のサービスの API | 企業向けの bot の前提 |
 | [stripe-modular-agentic.md](stripe-modular-agentic.md) | Stripe のモジュール化と agentic な設計のうち使えるもの | 流程の部品化、bot に渡す鍵 |
-| [market.md](market.md) | 国内の人材紹介、求人広告、HRTech の市場 | 課題の大きさ、収益の当てどころ |
+| [market.md](market.md) | 国内の人材紹介、求人広告、HRTech の市場 | 課題の大きさ(収益の当てどころは、第 2 版で business-model.md と PRD の U4 に置き換えた) |
 | [risks.md](risks.md) | AI 採用で起きた問題と教訓 | 権限とプライバシー、安全の設計 |
 | [integrations-company.md](integrations-company.md) | 企業の側でつなぐ相手 44 行(人事労務、勤怠、給与、評価、ATS、統合 API、求人媒体、メール、予定、チャット、文書)。API のない道、IT の承認 | 連携の戦略(4.3 節)、最初の体験の受け口(9.1) |
 | [integrations-seeker.md](integrations-seeker.md) | iOS と Android で自動で集められるもの、ストアの審査、メールの API、応募の記録の持ち出し、汎用アシスタントのスマホアプリ | 求職者のスマホでできること(4.3 節)、メールのつなぎ方(U11) |

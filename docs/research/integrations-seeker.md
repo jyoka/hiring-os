@@ -212,6 +212,8 @@
 - `gmail.metadata` では、検索の条件 `q` を使えない(出典: https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.messages/list 、見た日 2026-11-18)。
 - restricted scope の審査は、公開のアプリに要る。少数の知り合いだけが使う個人の用途、テスト中、組織の中だけのアプリは除く(出典: https://developers.google.com/identity/protocols/oauth2/production-readiness/restricted-scope-verification 、見た日 2026-11-18)。
 - restricted のデータをサーバーに保存するか送るなら、セキュリティ評価が要る。12 か月ごとに受け直す(出典: 同上、見た日 2026-11-18)。
+- 評価の条件は、保存か送信だけではない。同じページは、restricted のデータに触れ、「has the ability to access data from or through a third-party server」のアプリはすべて評価を受ける、と書く(出典: 同上、見た日 2026-11-18)。推測: 端末の中だけで読むアプリでも、hiring-os のサーバーとつながるなら、この条件に当たると判断される可能性がある。
+- restricted scope を使えるのは、製品ごとに決めた種類のアプリだけだ。「Certain application types can access restricted scopes for each product」と書き、種類は製品ごとのページ(例: Gmail API の方針)にある(出典: 同上、見た日 2026-11-18)。Gmail API の方針は、認める用途を、メールのクライアント、自動のバックアップ、生産性を上げるもの、メールの情報で報告や監視をするもの、の 4 つとする(出典: https://developers.google.com/workspace/gmail/api/policy 、見た日 2026-11-18)。
 - Google の今の説明は、評価の段階を AL1 と AL2 に分ける。AL2 になると、翌年以降も AL2 で評価する(出典: https://support.google.com/cloud/answer/13465431?hl=en 、見た日 2026-11-18)。
 - 費用の一次情報(Google の価格表)は、見つからなかった。評価をする会社の 1 つ、Leviathan Security は、AL1 を 3,000〜6,000 ドルと載せている(会社の発表)(出典: https://www.leviathansecurity.com/programs/google-casa-cloud-application-security-assessment 、見た日 2026-11-18)。
 - Gmail の scope で認める用途は、メールのクライアント、自動のバックアップ、生産性を上げるもの(生成 AI の要約を含む)、メールの情報で報告や監視をするもの(出典: https://developers.google.com/workspace/workspace-api-user-data-developer-policy 、見た日 2026-11-18)。
@@ -331,8 +333,8 @@ App Store の App Privacy と Play の Data safety は、開発者の申告で�
 
 推測:
 - Android の版が、iOS の版よりかなり多くを集められる。先に作るなら Android が向く。
-- Gmail は「端末の中だけで読み、求職のメールだけを残す」作りにすれば、セキュリティ評価の条件(サーバーへの保存か送信)に当たらない可能性がある。restricted scope の審査は残る。
-- Gmail の認める用途のうち「メールの情報で報告や監視をする」「生産性を上げる」に、応募の管理が当たる可能性がある。審査で確かめる必要がある。
+- Gmail は「端末の中だけで読み、求職のメールだけを残す」作りにすれば、セキュリティ評価の条件(サーバーへの保存か送信)に当たらない可能性がある。restricted scope の審査は残る。ただし、評価の条件には「第三者のサーバーを通してアクセスできる」アプリも入る。アプリがサーバーとつながるなら、当たる可能性もある。
+- Gmail の認める用途のうち「メールの情報で報告や監視をする」「生産性を上げる」に、応募の管理が当たる可能性がある。審査で確かめる必要がある。当たらなければ、restricted scope は使えない。
 
 ### 本人の手が要る道
 
