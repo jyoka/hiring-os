@@ -2,7 +2,10 @@
 
 この節は `docs/prd.md` の根拠になる調べものの入口だ。各主張の出典 URL と見た日は、各ファイルの本文にある。この README の表と結論は、各ファイルの記載をまとめたもので、本文より強く言い切らない。
 
-## 結論(Goal の問いへの答え)
+- 初版(2026-11-11): 10 ファイル。問いは「既存の大手はまだ AI ネイティブでないのか、どこに機会があるのか」。
+- 第 2 版(2026-11-18): 運営者の見直しに合わせて、連携と収益の 3 ファイルを足した(integrations-company.md、integrations-seeker.md、business-model.md)。運営者は、企業側のシステム(人事、勤怠、ATS など)を作らず、つなぐ相手にすると決めた。企業の bot は担当者の PC に、求職者の bot はスマホのネイティブアプリに入る。
+
+## 結論(初版の問いへの答え)
 
 問い: 既存の ATS、採用の SaaS、求人の大手は、本当にまだ AI ネイティブでないのか。どこに機会があるのか。
 
@@ -42,9 +45,45 @@
 ### 推測
 
 - 推測: 大手が囲いの外に出にくいのは、外部の bot に開くほど、自社の両側のデータと課金点(応募、スポンサー求人)が弱まるからだ。根拠は Indeed の CEO の発言と規約の書き方だけで、会社はそう述べていない。
-- 推測: hiring-os は大手と正面から競わず、大手の API や ATS の「外側」(企業の社内データの上、求職者の手元)に座る方が、大手の方針とぶつかりにくい。
+- 推測: hiring-os は大手と正面から競わず、大手の API や ATS の「外側」(企業の社内データの上、求職者の手元)に座る方が、大手の方針とぶつかりにくい。第 2 版で、運営者がこの方向を決定にした(企業側のシステムは作らず、つなぐ相手にする)。
+
+## 結論(第 2 版の問い: 連携と収益)
+
+問い: 企業側のシステムを作らずにつなぐなら、bot はデータをどう集められるか。求職者のスマホのアプリは何を自動で集められるか。どんな収益の形がありうるか。
+
+答え: 機会(上の 4 つ)は残る。ただし、一番の危険は連携だと分かった。国内のつなぐ口は思ったより狭い。「全部を自動で集める」は、企業の側でも求職者の側でも成り立たない所がある。収益は、店舗が払う月額(道具)が最初の体験に一番合う(推測)。
+
+### 企業の側の連携(integrations-company.md)
+
+- 国内の人事労務、勤怠、給与は、統合 API では届かない。Apideck は SmartHR、KING OF TIME、freee人事労務、ジョブカンを「まだ対応していない」と明記していた。国内は自前でつなぐ前提になる。[integrations-company.md「統合 API の範囲、粗さ、料金の形」](integrations-company.md)
+- 国内で外部の開発者がすぐ始められるのは、SmartHR、freee人事労務、HERP Hire、カオナビだった。KING OF TIME とジョブカンは申請が要る。Airシフトとマネーフォワード クラウド給与は公開 API が見つからなかった。[integrations-company.md「結論」](integrations-company.md)
+- 求人媒体は、応募を外に出す API を ATS の提携先にしか開いていない(Indeed は開発者契約と Indeed の裁量、Airワーク は提携 ATS 7 社)。国内の媒体で企業が使える公開 API は見つからず、確かめられた口は管理画面の CSV だけだった。[integrations-company.md「求人媒体の管理画面」](integrations-company.md)
+- 画面を操作する bot は規約とぶつかりうる。Indeed の規約は「AI or Agentic AI」を含む自動のアクセスを、SmartHR の規約はスクレイピングを禁じている。[integrations-company.md「規約の問題」](integrations-company.md)
+- MCP は「担当者本人のログインと権限」の形にそろってきた。HiBob は 2026-11-09 から、サービス用の利用者での MCP の新しい接続を止めた。[integrations-company.md「HiBob」](integrations-company.md)
+- メール、予定、文書には狭い口がある(予定の空き、`drive.file`、SharePoint の Selected scope、Exchange の RBAC for Applications)。Slack は Marketplace 外の商用アプリに厳しい。[integrations-company.md「メール」「予定」「チャット」「文書の置き場」](integrations-company.md)
+- 担当者の PC に bot を入れると、端末、OAuth の同意、チャットのアプリ、事業者の審査の承認が重なる。macOS では、画面の収録の許可を MDM で配れない。[integrations-company.md「担当者の PC に bot を入れるときの IT の承認」](integrations-company.md)
+
+### 求職者のスマホ(integrations-seeker.md)
+
+- iOS のアプリは、ほかのアプリの中身、通知、メール、SMS、画面を読めない。読めるのは、本人が許可した予定、連絡先、写真、位置と、共有の口やピッカーで渡されたものだけだ。[integrations-seeker.md「結論」「1. iOS」](integrations-seeker.md)
+- Android は広い。本人が許可すれば、通知アクセスで全アプリの通知を読める。ただし Google Play は、AccessibilityService で自律で動く使い方を禁じ、SMS の読み取りを既定の SMS かアシスタントのアプリに限る。[integrations-seeker.md「2. Android」「3. アプリストアの審査」](integrations-seeker.md)
+- 他社のアプリの機能を呼ぶ口(AppFunctions)は、システムのアシスタントだけに許す特権だ。OS のアシスタントは、第三者のアプリより多くを集められる。[integrations-seeker.md「結論」](integrations-seeker.md)
+- メールは各社の API か IMAP でつなぐ。Gmail の本文を広く読む scope は restricted で審査が要り、サーバーに保存か送信するなら 12 か月ごとのセキュリティ評価も要る。[integrations-seeker.md「4. メールの API」](integrations-seeker.md)
+- 求人サイトの応募の記録を本人が自分で書き出せる機能は、LinkedIn だけ確かめられた。国内の大手は開示請求(個人情報保護法第 33 条)が道になる。[integrations-seeker.md「5. 求人サイトの応募の記録の持ち出し」](integrations-seeker.md)
+- 推測: 「求職のデータだけ」は OS の許可の単位では表せない。端末の中で絞り、求職のもの以外を端末の外に出さない設計が要る。[integrations-seeker.md「このプロダクトへの示唆」](integrations-seeker.md)
+
+### 収益の形(business-model.md)
+
+- 小さな店舗の採用の公開の値: 面接コボットは月 30,000 円(税抜、月の応募 999 件まで)、マイナビバイトの応募課金は 1 応募 8,000 円から、タイミーは報酬の 30%(税抜)。[business-model.md「比べる表」](business-model.md)
+- 採用で払う成果課金は、職業紹介でなくても使える。厚生労働省は、募集情報等提供の成果報酬型の料金徴収を禁じていない。ただし 2025-04 から、求職者への金銭等の提供は目的を問わず原則禁止だ。[business-model.md「2. 収益の形と職業安定法の区分」](business-model.md)
+- スキマバイトの 30% は、有料職業紹介の許可の上に成り立っている(タイミーは許可 13-ユ-311381)。応募した時点で雇用契約が成立するサービスは職業紹介に当たる(厚生労働省の Q&A 問 9-1)。[business-model.md「比べる表」「2.」](business-model.md)
+- 求職者から取れるのは、応募に関係ない定額の料金だけだ(Q&A 問 5-1)。有料職業紹介は、アルバイトの求職者から取れない。[business-model.md「2.」](business-model.md)
+- 道具(SaaS)の提供を区分の外とする明文は見つからなかった。区分を決めるのは課金の形ではなく、誰の判断で選び、連絡を差配するかだ。[business-model.md「2.」](business-model.md)
+- 統合 API は接続ごとの課金が主だ(Merge は月 650 ドルで 10 接続まで、Finch は 1 接続 月 65 ドルから)。推測: 店舗の月額の価格帯では、店舗ごとに接続を買う形は粗利を圧迫する。[business-model.md「1. 収益の形ごとの実例」](business-model.md)
 
 ## 比べる表
+
+第 2 版の連携の比べる表(44 行、見た日 2026-11-18)は [integrations-company.md「比べる表」](integrations-company.md) に、スマホのデータの種類ごとの表は [integrations-seeker.md「比べる表」](integrations-seeker.md) に、収益の実例の表は [business-model.md「比べる表」](business-model.md) にある。下の表は初版のものだ。
 
 行は製品とサービスだけ。見た日は各ファイルの本文と表にある(いずれも 2026-11-11)。提供の段階は「発表のみ / ベータ / 一般提供 / 不明」で書く。
 
@@ -155,7 +194,10 @@
 | [stripe-modular-agentic.md](stripe-modular-agentic.md) | Stripe のモジュール化と agentic な設計のうち使えるもの | 流程の部品化、bot に渡す鍵 |
 | [market.md](market.md) | 国内の人材紹介、求人広告、HRTech の市場 | 課題の大きさ、収益の当てどころ |
 | [risks.md](risks.md) | AI 採用で起きた問題と教訓 | 権限とプライバシー、安全の設計 |
-| [source-check.md](source-check.md) | 出典 15 件の確かめと直し | 調べものの確からしさ |
+| [integrations-company.md](integrations-company.md) | 企業の側でつなぐ相手 44 行(人事労務、勤怠、給与、評価、ATS、統合 API、求人媒体、メール、予定、チャット、文書)。API のない道、IT の承認 | 連携の戦略(4.3 節)、最初の体験の受け口(9.1) |
+| [integrations-seeker.md](integrations-seeker.md) | iOS と Android で自動で集められるもの、ストアの審査、メールの API、応募の記録の持ち出し、汎用アシスタントのスマホアプリ | 求職者のスマホでできること(4.3 節)、メールのつなぎ方(U11) |
+| [business-model.md](business-model.md) | 収益の形の実例 28 件と、職業安定法の区分、単位の経済 | 収益の形(U4) |
+| [source-check.md](source-check.md) | 出典 33 件の確かめと直し | 調べものの確からしさ |
 
 ## 見つからなかったこと
 
@@ -171,8 +213,14 @@
 - 米国イリノイ州の AI Video Interview Act と HB 3773 の一次資料(ilga.gov に接続できなかった)。施行の日は二次資料で確かめた(regulation.md「3.1」)。
 - コロラド州 SB 24-205 の、2026-06-30 の後の状態。
 - 国内の大手(リクナビ、タウンワーク、Airワーク)の、単独の AI 機能の一次情報。
+- (第 2 版)求人媒体の応募の通知メールの中身(どの項目が載るか)。国内の媒体(engage、バイトル、タウンワーク、マイナビバイト)の、企業が使える公開 API。integrations-company.md「見つからなかったこと」。
+- (第 2 版)Airシフト、マネーフォワード クラウド給与の公開 API。Merge、Finch、Unified.to が国内のサービスに対応するか。
+- (第 2 版)iOS で、第三者のアプリがほかのアプリの通知を読む公開の API。integrations-seeker.md「見つからなかったこと」。
+- (第 2 版)道具(SaaS)の提供を職業紹介と募集情報等提供の区分の外とする厚生労働省の明文。東京労働局が 2026-03 に示したとされる採用代行の見解の一次資料(報道だけ確かめた)。business-model.md「見つからなかったこと」。
+- (第 2 版)非公開の料金(Greenhouse、Paradox、Kombo、SmartHR、HERP Hire の有料プラン)。
 
 ### 調べ方の限り
 
 - 調べものの途中で、この回の Web 検索の上限(200 回、全エージェントで共有)に達した。それ以後は、分かっている URL を直接開いて確かめた。上の「見つからなかった」には、検索を続ければ見つかるものが含まれうる。
 - ログインが要るページと有料のページは読んでいない。403 や 404 で開けなかったページは、各ファイルに書いた。
+- 第 2 版の 3 ファイルは、4 つの調べものの担当で分けて書いた(企業の側は 2 つに分けて 1 つのファイルにまとめた)。Web 検索は合わせて約 95 回だった。分かっている URL は直接開いた。
