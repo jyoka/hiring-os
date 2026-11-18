@@ -1,8 +1,8 @@
-# 出典の確かめ(48 件)
+# 出典の確かめ(54 件)
 
-調べものを書き終えた後、出典を選んで開き直し、書いた主張を支えているかを確かめた。合わせて 48 件だ。#1〜#18 は初版の調べもの(2026-11-11 に開き直した)、#19〜#33 は第 2 版で足した 3 ファイル(integrations-company.md、integrations-seeker.md、business-model.md。2026-11-18 に開き直した)、#34〜#48 は第 3 版で足した 4 ファイル(palantir-business.md、palantir-model.md、palantir-vision.md、fde-and-services-model.md。2026-11-18 に開き直した)の分だ。
+調べものを書き終えた後、出典を選んで開き直し、書いた主張を支えているかを確かめた。合わせて 54 件だ。#1〜#18 は初版の調べもの(2026-11-11 に開き直した)、#19〜#33 は第 2 版で足した 3 ファイル(integrations-company.md、integrations-seeker.md、business-model.md。2026-11-18 に開き直した)、#34〜#48 は第 3 版で足した 4 ファイル(palantir-business.md、palantir-model.md、palantir-vision.md、fde-and-services-model.md。2026-11-18 に開き直した)の分だ。#49〜#54 は、第 3 版のレビューの後に足した 6 件(2026-11-18 に開き直した)だ。
 
-## 選び方(#1〜#48)
+## 選び方(#1〜#54)
 
 どの回も、その回の Goal が決めた順に選んだ。
 
@@ -17,6 +17,7 @@
   1. 示唆(`palantir-implications.md`)が根拠に引く主張(試験の費用、ブートキャンプ、オントロジー、FDE、型の批判、ほかの会社の損失と料金の形)
   2. 売上と利益の数字(最新の年、最新の四半期、GAAP の黒字の始まり、上位の顧客)
   3. 創業者の発言(株主への手紙)
+- #49〜#54(第 3 版のレビューの後): レビューが挙げた 4 つ。「Palantir だけ」の反例(UiPath)、会社の宣伝文句と「commodity cognition」の一次資料、人の数の見込みの期限、SoundHound の FY2025 の数字だ。
 
 ## 結果
 
@@ -97,9 +98,26 @@ palantir-business.md、palantir-model.md、palantir-vision.md、fde-and-services
 | 47 | https://www.palantir.com/q3-2026-letter/en/ | 2026-11-02 の手紙: モデルだけでは価値が小さい。Palantir の運用の型なしに、LLM を大企業へ確実につなぐ手段はない。企業につながらない LLM のエージェントは、ほぼ無限の負債(palantir-vision.md「1. 発言の一覧」「2.1」。palantir-implications.md が引く) | 支えている | なし。本文に「these models on their own generate limited value」「the LLM agent is a virtually unlimited liability」「There is simply no means of effectively and reliably connecting the language models to large enterprises without the operating model and capabilities we have pioneered」があった | 支えている |
 | 48 | https://www.palantir.com/q2-2026-letter/en/ | 2026-08-03 の手紙: 主権の AI の運動。顧客はデータとプロンプトの管理を求める。モデルの会社は顧客の知恵を取り込む作り。Palantir はクリック、トークン、チャットで課金せず、価値の一部として支払われる(palantir-vision.md「1. 発言の一覧」「2.2」。palantir-implications.md が引く) | 支えている | なし。冒頭に「AI sovereignty is now well underway」と、データとプロンプトの管理、モデルの会社(language labs)が知恵(alpha)を取り込む作りの記述があった。後半に「as a derivative of value creation」「We do not get paid for clicks or tokens or chats」があった | 支えている |
 
+## 第 3 版のレビューの後の確かめ(#49〜#54)
+
+第 3 版のレビューが挙げた反例と数字を、同じ形で確かめた。開き直した日はすべて 2026-11-18。
+
+- この回は、SEC(www.sec.gov と data.sec.gov)が 403 を返した。UiPath の書類は、会社の IR のサイトに載る同じ書類(SEC の受付番号が同じもの)で読んだ。
+- #52 は、SEC の同じ URL を、この日の作業の中で先に保存した写しで読んだ。開き直しは 403 だった。
+- ServiceNow は、SEC も会社のサイトも開けなかった。表に入れず、fde-and-services-model.md に「確かめていない」と書いた。
+
+| # | URL | 主張(ファイルと節) | 最初の判定 | 直したこと | 直した後の判定 |
+|---|---|---|---|---|---|
+| 49 | https://ir.uipath.com/financials/sec-filings/content/0001734722-26-000012/path-20260131.htm | UiPath は自社を agentic automation の会社とし、AI agents を製品の柱に置く。FY2026(2026-01 まで)の売上 1,610.6、GAAP の営業利益 56.8、純利益 282.3(百万ドル)(fde-and-services-model.md「運営者の考えの確かめ」の 3a、3c、節 4「反例」) | 支えている | なし。表題は「March 25, 2026 - 10-K」。本文に「pioneering the evolution from rule-based automation to intelligent agentic automation」と「combine automation, AI agents, and people」があった。損益計算書は売上 1,610,572、営業利益 56,760、純利益 282,330 千ドル。税の利益(benefit)は 181,702 千ドル | 支えている |
+| 50 | https://ir.uipath.com/financials/sec-filings/content/0001734722-25-000050/path-20251031.htm | 2025-08〜10 の GAAP の純利益 198.8 は、税の評価性引当金の取り崩しを含む。税引前の利益 24.6、税の利益 174.2。取り崩しは米国の連邦の分 175.1 と、ニューヨークの州と市の分 9.3(百万ドル)(fde-and-services-model.md 節 4「反例」) | 支えている | なし。損益計算書は税引前 24,592、税の利益 (174,247)、純利益 198,839 千ドル。注記に「we released $ 175.1 million of the valuation allowance associated with the U.S. federal DTA and $ 9.3 million ... New York State and New York City」があった。営業利益は 13,071 千ドル | 支えている |
+| 51 | https://ir.uipath.com/financials/sec-filings/content/0001734722-26-000041/path-20260430.htm 、https://ir.uipath.com/financials/sec-filings/content/0001734722-26-000050/path-20260731.htm | GAAP の純利益は 2025-05〜07 が 1.6、2026-02〜04 が 22.5、2026-05〜07 が 36.1。営業損益は 2025-05〜07 が -20.2、2026-02〜04 が 28.0、2026-05〜07 が 31.6(百万ドル)(fde-and-services-model.md 節 4「反例」) | 支えている | なし。2026-04 期の 10-Q は純利益 22,525、営業利益 27,987 千ドル。2026-07 期の 10-Q は純利益 36,089 と前年同期 1,584、営業利益 31,604 と前年同期 (20,185) 千ドル | 支えている |
+| 52 | https://www.sec.gov/Archives/edgar/data/1321655/000132165526000004/a2025q4ex991earningsrelease.htm | Q4 2025 の決算の発表(2026-02-02)で、Karp は「We are an n of 1」「Palantir is alone in choosing ...」と述べ、AI のモデルの進歩を他社より先に「commodity cognition」と呼んだと述べた(fde-and-services-model.md の 3a と節 4「反例」、palantir-vision.md「1. 発言の一覧」「2.1」) | 支えている | なし。日付は February 2, 2026。本文に「We are an n of 1, and these numbers prove it. Palantir is alone in choosing to exclusively focus on scaling the operational leverage made possible by the rapid advancements of AI models, a trend that we first called 'commodity cognition' well before others started repeating it」があった | 支えている |
+| 53 | https://fortune.com/2025/08/06/palantir-alex-karp-top-25-valuable-companies-world-but-not-in-fortune-500 | Karp は 2025-08 に、売上を伸ばしつつ人を約 500 人減らして約 3,600 人にできると述べた(報道)。2026-09 末の時点で外れた(palantir-vision.md「結論」「5. 見立ての採点」) | 一部 | 記事は「could keep growing revenue while reducing headcount by 500 jobs to about 3,600 people」で、期限がなかった。「外れた」は言いすぎなので、「まだ分からないこと」に移し、期限のない見込みと書いた | 支えている |
+| 54 | https://data.sec.gov/api/xbrl/companyconcept/CIK0001840856/us-gaap/NetIncomeLoss.json | SoundHound の FY2025 の純損失 14.0、営業損失 23.3(百万ドル、GAAP)(fde-and-services-model.md「比べる表」、節 4) | 支えていない | 開き直しは 403。レビューは、XBRL の値 -14,006 ドルが桁の誤りに見え、9 か月の -54.1 と合わせると Q4 2025 が +40 になると指摘した。10-K の損益計算書で確かめられなかったので、FY2025 の営業損益と純損益を消し、「確かめられなかった」と書いた | 消した |
+
 ## まとめ
 
-- 48 件のうち、最初から支えていたのは 37 件だった。11 件は「一部」で、本文を直して「支えている」にした。消した主張はない。
+- 54 件のうち、最初から支えていたのは 41 件だった。12 件は「一部」で、本文を直して「支えている」にした。1 件(#54)は「支えていない」で、主張を消した。
 - #1〜#15: 11 件は最初から支えていた。4 件は「一部」で、本文を直して「支えている」にした。#8 は最初「支えている」としたが、2 回目のレビューで「一部」と分かった。
 - #16〜#18(追加の 3 件): すべて最初から支えていた。
 - #19〜#33(新しい 3 ファイル): 11 件は最初から支えていた。4 件(#26、#28、#30、#33)は「一部」で、本文を直して「支えている」にした。
@@ -113,5 +131,7 @@ palantir-business.md、palantir-model.md、palantir-vision.md、fde-and-services
   - #42: Fin の月 50 成果の最低は、ほかの会社の道具と使う場合だけだった。席の料金の条件も足した。
 - 選んだファイル(#1〜#18): regulation.md(4 件)、market.md(3 件)、job-platforms.md(4 件)、ats.md(2 件)、ai-hiring-tools.md、general-assistants.md、a2a-and-permissions.md、stripe-modular-agentic.md、risks.md(各 1 件)。
 - 選んだファイル(#19〜#33): integrations-company.md(9 件、うち #26 と #33 は他のファイルと共通)、integrations-seeker.md(4 件)、business-model.md(4 件)。
+- #49〜#54(第 3 版のレビューの後): 4 件(#49〜#52)は最初から支えていた。#53 は「一部」で、本文を直して「支えている」にした。#54 は「支えていない」で、数字を消した。
 - 選んだファイル(#34〜#48): palantir-model.md(6 件)、palantir-business.md(4 件)、fde-and-services-model.md(3 件)、palantir-vision.md(2 件)。
-- 確かめていないこと: この表の 48 件の外の主張は、各ファイルを書いた時に一度開いただけで、開き直していない。
+- 選んだファイル(#49〜#54): fde-and-services-model.md(5 件、うち #52 は palantir-vision.md と共通)、palantir-vision.md(1 件)。
+- 確かめていないこと: この表の 54 件の外の主張は、各ファイルを書いた時に一度開いただけで、開き直していない。

@@ -14,21 +14,21 @@
 | 2a | AI の時代の製品は、もう広く使う製品として売るものではない | 事実の文 | 合っていない | Anthropic の S-1/A は、Claude の広がりの多くを「organic」と書く。直近 12 か月の売上の 26% は、各 10 万ドル未満の約 4,000 万の顧客から来た。Salesforce、Intercom などは公開の料金で広く売る。一方で、大口(10 万ドル以上)が売上の 74% で、各社は導入の部隊を増やしている。出典: https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm (見た日 2026-11-18)。節 4、節 5 |
 | 2b | サービスを売ることの方が大事だ | 規範の文 | - | 規範の文。事実で確かめる対象でない。palantir-implications.md で答える |
 | 2c | この事業の形(サービスを売る形)はとても古く、SaaS よりずっと古い | 事実の文 | 合っている | EDS は 1962 年の創業で、Frito-Lay の計算の仕事を月額で請け負った。SaaS の前身の ASP は 1990 年代。SaaS という語の早い例は SIIA の 2001-02 の文書とされる(本文は開けなかった)。出典: https://hpalumni.org/edsHistoryCulture 、https://www.cio.com/article/272086/web-services-software-as-a-service-saas-definition-and-solutions.html (見た日 2026-11-18)。節 6 |
-| 3a | AI の見立てで利益が出ることを続けて示している会社は、Palantir だけだ | 事実の文 | 一部合っている | 数え方で変わる。AI のモデルとエージェントを主に売る会社、上場の「AI プラットフォーム」の会社(C3.ai、SoundHound、BigBear.ai)に限ると、GAAP の黒字を続ける会社は見つからず、Palantir だけだ。AI 向けのデータのサービスの Innodata は、FY2024、FY2025、2026 の各四半期で GAAP の純利益が黒字。AI の基盤の Nvidia、AI の広告の AppLovin も黒字。節 4「反例」 |
+| 3a | AI の見立てで利益が出ることを続けて示している会社は、Palantir だけだ | 事実の文 | 一部合っている | 数え方で変わる。AI エージェントを売る上場の会社まで含めると合わない。(1) AI のモデルと AI プラットフォームを主に売る上場の会社(C3.ai、SoundHound、BigBear.ai)では、GAAP の黒字を続ける会社は Palantir のほかに見つからなかった。(2) UiPath は 10-K で自社の製品を「agentic automation」とし、「AI agents」を製品の柱に置く。GAAP の純利益は 2025-05〜07 から 2026-05〜07 まで 5 四半期続けて黒字で、FY2026(2026-01 まで)は 282.3 だ。ただし 2025-08〜10 の 198.8 は、税の評価性引当金の取り崩しを含む。(3) ServiceNow も AI エージェントを売る。GAAP の損益は確かめていない(SEC が 403 を返し、会社のサイトも開けなかった)。(4) AI 向けのデータのサービスの Innodata、AI の基盤の Nvidia、AI の広告の AppLovin も黒字だ。(5) Palantir の最初の GAAP の黒字(Q4 2022)は、AIP(2023-04)より前で、営業外の収益による(営業損益は赤字)。(6) 会社自身が Q4 2025 の決算の発表で「We are an n of 1 ... Palantir is alone in choosing ...」と書く。運営者の「Palantir だけ」は、会社の宣伝文句と重なる。出典: https://ir.uipath.com/financials/sec-filings/content/0001734722-26-000012/path-20260131.htm 、https://www.sec.gov/Archives/edgar/data/1321655/000132165526000004/a2025q4ex991earningsrelease.htm (見た日 2026-11-18)。節 4「反例」 |
 | 3b | ほかの AI のモデルの会社は、投資を続けても回収が見えず、お金を失い続けている | 事実の文 | 一部合っている | 損失は合う。Anthropic は FY2025 の GAAP の純損失 41,965、OpenAI は 2025 年の純損失 約 38,530(報道)。ただし「回収が見えない」は一部合わない。Anthropic は Q2 2026 に GAAP の営業利益 974 を出した(Q3 2026 は営業損失 567)。SpaceX の SI 部門(Grok、Cursor、X を含む)は Q3 2026 に部門の営業利益 431。節 4 |
-| 3c | AI エージェントの会社は、投資を続けても回収が見えず、お金を失い続けている | 事実の文 | 一部合っている | 上場の会社は合う。C3.ai は創業の 2009 年から毎期の純損失を 10-K に書く。SoundHound、BigBear.ai も純損失が続く。非上場の Sierra、Decagon は損益を出しておらず、不明。節 3、節 4 |
-| 3d | 事業の形がうまく働いていないからだと思う | 事実の文(因果の推測) | 一部合っている | 支える部分: 費用が売上を上回る。Anthropic の計算資源の費用は FY2025 に売上の 160%。OpenAI の 2025 年の研究開発費 19,180 は売上 13,070 を上回る(報道)。支えない部分: 純損失の大部分は、転換社債などの評価の変動という現金の出ない費用だ(Anthropic の FY2025 は 34,308)。Palantir 自身も同じ型で、2003 年の創業から Q4 2022 まで黒字の四半期がなかった(会社の発表)。導入を先に売る C3.ai も赤字だ。Anthropic は、製品が自然に広がる形で営業損失を縮めた。「売り方が原因」を示す一次情報は見つからなかった。節 1、節 3、節 4 |
+| 3c | AI エージェントの会社は、投資を続けても回収が見えず、お金を失い続けている | 事実の文 | 一部合っている | AI プラットフォームの上場の会社は合う。C3.ai は創業の 2009 年から毎期の純損失を 10-K に書く。BigBear.ai も純損失が続く。SoundHound も FY2024 と Q3 2026 は純損失だ(FY2025 は確かめられなかった)。一方で、AI エージェントを製品の柱に置く上場の UiPath は、5 四半期続けて GAAP の黒字だ(うち 2025-08〜10 は税の評価性引当金の取り崩しを含む)。ServiceNow は確かめていない。非上場の Sierra、Decagon は損益を出しておらず、不明。節 3、節 4 |
+| 3d | 事業の形がうまく働いていないからだと思う | 事実の文(因果の推測) | 一部合っている | 支える部分: 費用が売上を上回る。Anthropic の計算資源の費用は FY2025 に売上の 160%。OpenAI の 2025 年の研究開発費 19,180 は売上 13,070 を上回る(報道)。支えない部分: 純損失の大部分は、転換社債などの評価の変動という現金の出ない費用だ(Anthropic の FY2025 は 34,308)。Palantir 自身も同じ型で、会社は Q4 2022 を初めての GAAP の黒字の四半期と書く(会社の発表)。創業の 2003 年から約 20 年赤字だったかは推測だ。導入を先に売る C3.ai も赤字だ。Anthropic は、製品が自然に広がる形で営業損失を縮めた。「売り方が原因」を示す一次情報は見つからなかった。節 1、節 3、節 4 |
 | 4a | だから Palantir は良い手本だ | 規範の文 | - | 規範の文。事実で確かめる対象でない。palantir-implications.md で答える |
 | 4b | Prototype Studio も AI ネイティブな hiring OS も、Palantir の型を考えに入れる必要がある | 規範の文 | - | 規範の文。事実で確かめる対象でない。palantir-implications.md で答える |
-| 5a | 会社としてすでにいろいろな SaaS を持っているなら、製品に AI エージェントを組み込める | 事実の文 | 合っている | 他社の例がある。Salesforce は Agentforce を既存の製品に組み込み、Workday と ServiceNow も AI エージェントを既存の契約に足した。出典: https://www.salesforce.com/agentforce/pricing/ 、https://blog.workday.com/en-us/introducing-workday-flex-credits-smarter-more-flexible-way-access-ai-innovation.html (見た日 2026-11-18)。節 5 |
+| 5a | 会社としてすでにいろいろな SaaS を持っているなら、製品に AI エージェントを組み込める | 事実の文 | 合っている | 他社の例がある。Salesforce は Agentforce を既存の製品に組み込み、Workday と ServiceNow も AI エージェントを既存の契約に足した。出典: https://www.salesforce.com/agentforce/pricing/ 、https://blog.workday.com/en-us/introducing-workday-flex-credits-smarter-more-flexible-way-access-ai-innovation.html 、ServiceNow は解説の記事 https://www.constellationr.com/insights/news/servicenow-aims-goldilocks-software-model-saas-industry-likely-follow (見た日 2026-11-18)。ServiceNow の会社の資料は開けなかった。節 5 |
 | 5b | (SaaS を持つ会社は) AI ネイティブな製品もたくさん作れる | 事実の文(見込みを含む) | 一部合っている | 「作れる」は他社の例が支える。既存の顧客対応の SaaS を持つ Intercom は、AI エージェントの Fin を成果ごとの別の料金で売り、ほかの会社の道具とも使えるようにした。出典: https://fin.ai/pricing (見た日 2026-11-18)。節 2「Intercom(Fin)」。「たくさん」と、運営者の会社の力は、外の資料では確かめられない |
 | 5c | この新しい Palantir の型 | 事実の文 | 一部合っている | 型そのものは新しくない。Palantir の創業は 2003 年で、FY2020 の 10-K は forward deployed engineers(FDE)を書く。新しいのは、AI のモデルの会社が FDE を取り入れたこと(OpenAI、Anthropic、Cohere の 2026 年の求人)。出典: https://www.sec.gov/Archives/edgar/data/1321655/000119312521060650/d65934d10k.htm (見た日 2026-11-18)。節 1、節 2 |
 | 5d | この型を、比べる相手として、AI の機能の代わりの道として持っておく必要がある | 規範の文 | - | 規範の文。事実で確かめる対象でない。palantir-implications.md で答える |
 
 ## 結論
 
-- Palantir の GAAP の黒字は確かだ。純利益は Q4 2022(30.9)から 16 四半期続けて黒字で、年では FY2023(209.8)が初めて。FY2025 は 1,625.0、Q3 2026 は 1,128.0。会社は Q4 2022 を「First Quarter of Positive GAAP Net Income」と書く。創業の 2003 年から約 20 年、黒字の四半期がなかったことになる(FY2020 は -1,166.4)。
-- 「黒字を続けるのは Palantir だけ」は、数え方で答えが変わる。AI のモデル、エージェント、AI プラットフォームを主に売る会社では、ほかに見つからなかった。AI 向けのデータのサービスの Innodata、AI の基盤の Nvidia、AI の広告の AppLovin は黒字だ。
+- Palantir の GAAP の黒字は確かだ。純利益は Q4 2022(30.9)から 16 四半期続けて黒字で、年では FY2023(209.8)が初めて。FY2025 は 1,625.0、Q3 2026 は 1,128.0。会社は Q4 2022 を「First Quarter of Positive GAAP Net Income」と書く。推測: 創業の 2003 年から約 20 年、黒字の四半期がなかったと読める。公開の書類で確かめた損益は FY2018 からで、それより前の四半期の数字は確かめていない(FY2020 は -1,166.4)。
+- 「黒字を続けるのは Palantir だけ」は、数え方で答えが変わる。AI のモデルと AI プラットフォームを主に売る上場の会社では、ほかに見つからなかった。ただし、AI エージェントを製品の柱に置く UiPath は、5 四半期続けて GAAP の黒字だ(うち 2025-08〜10 は税の評価性引当金の取り崩しを含む)。AI 向けのデータのサービスの Innodata、AI の基盤の Nvidia、AI の広告の AppLovin も黒字だ。Palantir の最初の黒字(Q4 2022)は AIP より前で、営業外の収益による。
 - AI のモデルの会社は大きな損失を出している。Anthropic(S-1/A、GAAP)は FY2025 に純損失 41,965、2026 年 1〜9 月に 104,039。OpenAI(報道)は 2025 年に純損失 約 38,530。ただし純損失の多くは、評価の変動などの現金の出ない費用だ。営業の段階では Anthropic が Q2 2026 に黒字(974)を出し、Q3 2026 に赤字(567)へ戻った。
 - 損失の主な中身は、計算資源と研究開発だ。Anthropic の計算資源の費用は、売上に対して FY2024 に 653%、FY2025 に 160%、2026 年 1〜9 月に 57%。損失の原因を「売り方」に結びつける一次情報は見つからなかった。
 - FDE の型は AI のモデルの会社に広がった。OpenAI、Anthropic、Cohere、Scale AI が 2026 年に FDE を募集している。Anthropic は S-1/A で、FDE を含む Applied AI の部隊を説明する。ただし同じ書類は、広がりの多くが「organic」で、大きな営業の組織によらないと書く。
@@ -53,10 +53,10 @@
 | Salesforce | サービスをソフトウェアのように売る(既存の SaaS) | CRM と Agentforce | 既存の顧客に足す | 席数、会話ごと 2 ドル、アクションごと 0.10 ドル | FY2026(2026-01 まで): 売上 41,525、純利益 7,457(GAAP) | https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm | 2026-11-18 |
 | Accenture | サービスをソフトウェアのように売る(古い型の代表) | IT のサービス、コンサル、AI の導入 | 人が客先で作る | 人月、成果の指標に結びつく契約も多い | FY2026(2026-08 まで): 売上 74,183、純利益 8,367(GAAP) | https://www.sec.gov/Archives/edgar/data/1467373/000146737326000049/acn-20260831.htm | 2026-11-18 |
 | Innodata | サービスをソフトウェアのように売る(AI 向けのデータのサービス) | AI の学習と評価のデータの作業 | 大きな AI の会社に人と道具で納める | 確かめていない | FY2025: 売上 251.7、純利益 32.2(GAAP)。Q3 2026: 売上 95.6、純利益 10.3(GAAP) | https://www.sec.gov/Archives/edgar/data/903651/000110465926020655/inod-20251231x10k.htm | 2026-11-18 |
-| C3.ai | うまくいかなかった | 企業向けの AI のアプリと基盤 | 最大 6 か月の有料の導入の段階から広げる | 使用量の課金、サブスクリプション | FY2026(2026-04 まで): 売上 250.3、純損失 470.4(GAAP) | https://www.sec.gov/Archives/edgar/data/1577526/000157752626000078/ai-20260430.htm | 2026-11-18 |
+| C3.ai | うまくいかなかった | 企業向けの AI のアプリと基盤 | 最大 6 か月の有料の導入の段階から広げる | 月額と使用量の課金か、期間を決めた複数年の契約 | FY2026(2026-04 まで): 売上 250.3、純損失 470.4(GAAP) | https://www.sec.gov/Archives/edgar/data/1577526/000157752626000078/ai-20260430.htm | 2026-11-18 |
 | Builder.ai | うまくいかなかった | AI で作るとうたったアプリの開発 | 人のエンジニアが多くを作ったと報道 | 確かめていない | 2024 年の売上は 220 から 55 へ直された(報道)。2025 年に破綻 | https://techinformed.com/unicorn-builder-ai-collapses-fomo-investing/ | 2026-11-18 |
 | IBM Watson Health | うまくいかなかった | 医療のデータと分析 | IBM の部門 | 確かめていない | 部門の損益は見つからなかった。2022-01 に資産を Francisco Partners へ売る合意 | https://newsroom.ibm.com/2022-01-21-Francisco-Partners-to-Acquire-IBMs-Healthcare-Data-and-Analytics-Assets | 2026-11-18 |
-| SoundHound | AI の会社(上場) | 音声の AI | 確かめていない | 確かめていない | FY2025: 売上 168.9、純損失 14.0(GAAP)。Q3 2026: 売上 62.4、純損失 45.8(GAAP) | https://data.sec.gov/api/xbrl/companyconcept/CIK0001840856/us-gaap/NetIncomeLoss.json | 2026-11-18 |
+| SoundHound | AI の会社(上場) | 音声の AI | 確かめていない | 確かめていない | FY2024: 売上 84.7、純損失 350.7(GAAP)。FY2025 の純損益は確かめられなかった(節 4)。Q3 2026: 売上 62.4、純損失 45.8(GAAP) | https://data.sec.gov/api/xbrl/companyconcept/CIK0001840856/us-gaap/NetIncomeLoss.json | 2026-11-18 |
 | BigBear.ai | AI の会社(上場) | 防衛などの AI の分析 | 確かめていない | 確かめていない | FY2025: 売上 127.7、純損失 293.9(GAAP)。Q3 2026: 売上 43.6、純損失 91.9(GAAP) | https://data.sec.gov/api/xbrl/companyconcept/CIK0001836981/us-gaap/NetIncomeLoss.json | 2026-11-18 |
 | SpaceX の SI 部門(xAI の Grok を含む) | AI の会社(上場の会社の部門) | Grok、Cursor、X、AI の基盤の契約 | 確かめていない | 確かめていない | Q3 2026: 部門の売上 7,560、部門の営業利益 431。2026 年 1〜9 月: 売上 10,939、営業損失 3,295(部門の数字。計算) | https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/spcx-20260930.htm | 2026-11-18 |
 | Mistral | AI の会社(非上場) | モデルと企業向けの導入 | 確かめていない | 確かめていない | 年換算の売上(run-rate) 400 超(2026-02、CEO の発言の報道)。損益は見つからなかった | https://texxr.com/1163242/mistral-reports-400m-arr-aims-1b-2026 | 2026-11-18 |
@@ -229,28 +229,35 @@
 |---|---|---|---|---|---|
 | C3.ai | FY2026(2026-04 まで) | 250.3 | - | -470.4 | https://www.sec.gov/Archives/edgar/data/1577526/000157752626000078/ai-20260430.htm |
 | SoundHound | FY2024 | 84.7 | -341.4 | -350.7 | https://data.sec.gov/api/xbrl/companyconcept/CIK0001840856/us-gaap/NetIncomeLoss.json |
-| SoundHound | FY2025 | 168.9 | -23.3 | -14.0 | 同上 |
+| SoundHound | FY2025 | 168.9 | 確かめられなかった | 確かめられなかった | 同上 |
 | SoundHound | Q3 2026 | 62.4 | -46.0 | -45.8 | 同上 |
 | BigBear.ai | FY2025 | 127.7 | -213.9 | -293.9 | https://data.sec.gov/api/xbrl/companyconcept/CIK0001836981/us-gaap/NetIncomeLoss.json |
 | BigBear.ai | Q3 2026 | 43.6 | -100.0 | -91.9 | 同上 |
 | CoreWeave(AI のクラウド) | FY2025 | 5,131 | - | -1,167 | https://data.sec.gov/api/xbrl/companyconcept/CIK0001769628/us-gaap/NetIncomeLoss.json |
 
 - 見た日はすべて 2026-11-18。「-」は取らなかった値。
-- SoundHound の FY2025 の損失が小さいのは、Q1 2025 に純利益 129.9 を計上したためだ。中身(評価の変動か)は確かめていない。
+- SoundHound の FY2025 の営業損益と純損益は、確かめられなかった。SEC の XBRL の純損益の値 -14,006 ドルは桁が合わず、9 か月の -54.1 とも合わない。10-K の損益計算書は、SEC が 403 を返して開けなかった。確かめられなかったので根拠に使わない。
 
 ### 反例: AI で GAAP の黒字を続ける会社(数え方を分ける)
 
 | 数え方 | 会社 | GAAP の純利益 | 出典 |
 |---|---|---|---|
 | AI のモデル、エージェント、AI プラットフォームを主に売る | Palantir | FY2023 209.8、FY2024 462.2、FY2025 1,625.0 | 節 1 |
-| 同上 | (ほかに見つからなかった) | Anthropic は Q2 2026 に営業利益のみ黒字。純損益は赤字 | 節 4 |
+| 同上(上場の AI プラットフォーム) | (ほかに見つからなかった) | C3.ai、SoundHound、BigBear.ai は純損失。Anthropic は Q2 2026 に営業利益のみ黒字で、純損益は赤字 | 節 3、節 4 |
+| AI エージェントを製品の柱に置く(既存の自動化の製品から) | UiPath | 2025-05〜07 1.6、2025-08〜10 198.8、2025-11〜2026-01 約 104.5(計算)、2026-02〜04 22.5、2026-05〜07 36.1。FY2026(2026-01 まで) 282.3 | https://ir.uipath.com/financials/sec-filings/content/0001734722-26-000012/path-20260131.htm 、https://ir.uipath.com/financials/sec-filings/content/0001734722-25-000050/path-20251031.htm 、https://ir.uipath.com/financials/sec-filings/content/0001734722-26-000041/path-20260430.htm 、https://ir.uipath.com/financials/sec-filings/content/0001734722-26-000050/path-20260731.htm |
+| AI エージェントを既存の SaaS に足す | ServiceNow | 確かめていない(SEC が 403 を返し、会社のサイトも開けなかった) | - |
 | AI の会社向けのサービス(AI 専業に近い) | Innodata | FY2024 28.7、FY2025 32.2、2026 年の各四半期も黒字 | https://data.sec.gov/api/xbrl/companyconcept/CIK0000903651/us-gaap/NetIncomeLoss.json |
 | AI を使う広告(AI を主に売るかは議論が分かれる) | AppLovin | FY2023 356.7、FY2024 1,579.8、FY2025 3,333.8 | https://data.sec.gov/api/xbrl/companyconcept/CIK0001751008/us-gaap/NetIncomeLoss.json |
 | AI の基盤(半導体) | Nvidia | FY2026(2026-01 まで) 120,067 | https://data.sec.gov/api/xbrl/companyconcept/CIK0001045810/us-gaap/NetIncomeLoss.json |
 | AI の導入のサービス(古い型) | Accenture | FY2026(2026-08 まで) 8,367 | 節 2 |
 
 - 見た日はすべて 2026-11-18。
-- 「AI の会社」を AI のモデル、エージェント、AI プラットフォームの会社に限ると、運営者の「Palantir だけ」は合う。AI の会社向けのサービスや、AI の基盤まで広げると合わない。
+- 「AI の会社」を AI のモデルと AI プラットフォームの上場の会社に限ると、運営者の「Palantir だけ」は合う。AI エージェントを売る上場の会社(UiPath)、AI の会社向けのサービス、AI の基盤まで広げると合わない。
+- UiPath の中身: 10-K は自社を「intelligent agentic automation」へ進める会社とし、「automation, AI agents, and people」を組み合わせる基盤と書く。FY2026 の売上は 1,610.6、GAAP の営業利益は 56.8、純利益は 282.3 だ(出典: https://ir.uipath.com/financials/sec-filings/content/0001734722-26-000012/path-20260131.htm 、見た日 2026-11-18)。
+- UiPath の 198.8(2025-08〜10)は、税の評価性引当金の取り崩しを含む。この四半期の税引前の利益は 24.6、税の利益(benefit)は 174.2 だ。10-Q は、米国の連邦の繰延税金資産の評価性引当金 175.1 と、ニューヨークの州と市の分 9.3 を取り崩したと書く(出典: https://ir.uipath.com/financials/sec-filings/content/0001734722-25-000050/path-20251031.htm 、見た日 2026-11-18)。営業損益は 2025-05〜07 が -20.2、2025-08〜10 が 13.1、2025-11〜2026-01 が約 80.3(計算: 年の 56.8 から 9 か月の -23.5 を引いた)、2026-02〜04 が 28.0、2026-05〜07 が 31.6 だ(出典: https://ir.uipath.com/financials/sec-filings/content/0001734722-26-000050/path-20260731.htm 、https://ir.uipath.com/financials/sec-filings/content/0001734722-26-000041/path-20260430.htm 、https://ir.uipath.com/financials/sec-filings/content/0001734722-26-000012/path-20260131.htm 、https://ir.uipath.com/financials/sec-filings/content/0001734722-25-000050/path-20251031.htm 、見た日 2026-11-18)。営業損益は税の効果を含まない。営業の段階でも、2025-08〜10 から黒字だ。
+- UiPath の書類は、SEC が 403 を返したため、会社の IR のサイトに載る同じ書類で読んだ。2025-11〜2026-01 は、FY2026 から 9 か月(177.9)を引いて計算した。
+- Palantir の最初の GAAP の黒字(Q4 2022)は、AIP(2023-04)より前だ。営業損失 -17.8 に、金利収入とその他の収益が乗った(palantir-business.md の節 5)。黒字の始まりは AI の製品によるものではない。
+- Palantir は Q4 2025 の決算の発表で、Karp の言葉として「We are an n of 1 ... Palantir is alone in choosing to exclusively focus on scaling the operational leverage made possible by the rapid advancements of AI models」と書く(出典: https://www.sec.gov/Archives/edgar/data/1321655/000132165526000004/a2025q4ex991earningsrelease.htm 、見た日 2026-11-18)。運営者の「Palantir だけ」は、この宣伝文句と重なる。
 - Microsoft、Alphabet などの大きなクラウドの会社も黒字だが、AI の部分の損益は分けて出ていないので、表に入れなかった。
 
 ## 5. SaaS の席数の課金と、成果や導入の課金の比べ
@@ -278,7 +285,7 @@
 - 年換算の売上(run-rate、ARR)は、直近の月や週を年に引き延ばした値で、会計の売上ではない。Sierra、Cohere、Mistral の数字はこれだ。
 - SpaceX の SI 部門の営業利益は、会社の部門の測り方の数字で、GAAP の連結の営業利益とは違う。
 - OpenAI の数字はすべて報道だ。元の報道は有料か個人のニュースレターで、無料の報道の要旨で確かめた。
-- 推測: 運営者の「事業の形」の見立ては、2 つの意味に分けると確かめやすい。(1) 売上より費用が大きい、という意味なら、一次情報が支える。(2) 製品を広く売るのが悪く、サービスとして売れば利益が出る、という意味なら、一次情報は支えない。Palantir 自身が約 20 年赤字で、C3.ai は導入を先に売っても赤字だ。
+- 推測: 運営者の「事業の形」の見立ては、2 つの意味に分けると確かめやすい。(1) 売上より費用が大きい、という意味なら、一次情報が支える。(2) 製品を広く売るのが悪く、サービスとして売れば利益が出る、という意味なら、一次情報は支えない。Palantir 自身も Q4 2022 まで赤字が続き(約 20 年は推測)、C3.ai は導入を先に売っても赤字だ。
 - 推測: Palantir の利益率の高さは、粗利率(FY2024 で 80%。palantir-business.md)と、計算資源を大きく買わない事業であることに支えられている。モデルを自分で学習させる会社とは、費用の形がちがう。
 - 推測: 成果課金は、AI のモデルの費用を売る側が負う形だ。解決率が低い間は、売る側の粗利が下がる。Decagon が会話ごとの課金を主にしているのは、その危険を顧客と分けるためと読める。
 
@@ -300,8 +307,11 @@
   - IBM Watson Health の部門の損益。
   - Workday の Flex Credits の単価。ServiceNow の決算の説明会の記録そのもの。
   - Zendesk の今の 1 件の単価(解説の記事は 1.50 ドルと書くが、会社の資料で確かめていない)。
-  - AI のエージェントを主に売る会社で、GAAP の黒字を続ける会社。
+  - AI のエージェントを主に売る非上場の会社(Sierra、Decagon など)の損益。上場の UiPath は黒字だった(節 4「反例」)。
+  - SoundHound の FY2025 の営業損益と純損益(SEC が 403)。
 - 確かめていないこと:
   - Palantir の CEO の手紙の中身(創業者の AI の見立て)。
   - Mistral の FDE の求人。
   - IBM の 1960 年代のサービスの事業の歴史。
+  - ServiceNow の GAAP の損益と、AI エージェントの売り方の会社の資料(SEC と会社のサイトが開けなかった)。
+  - 国内の上場の AI の会社の損益。社名を挙げるなら記憶からの推測で、調べていない。

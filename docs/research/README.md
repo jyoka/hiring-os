@@ -4,7 +4,7 @@
 
 - 初版(2026-11-11): 10 ファイル。問いは「既存の大手はまだ AI ネイティブでないのか、どこに機会があるのか」。
 - 第 2 版(2026-11-18): 運営者の見直しに合わせて、連携と収益の 3 ファイルを足した(integrations-company.md、integrations-seeker.md、business-model.md)。運営者は、企業側のシステム(人事、勤怠、ATS など)を作らず、つなぐ相手にすると決めた。企業の bot は担当者の PC に、求職者の bot はスマホのネイティブアプリに入る。
-- 第 3 版(2026-11-18): 運営者の考え(導入と成果を売る型)に合わせて、Palantir と、近い型の会社の 4 ファイルを足した(palantir-business.md、palantir-model.md、palantir-vision.md、fde-and-services-model.md)。
+- 第 3 版(2026-11-18): 運営者の考え(導入と成果を売る型)に合わせて、5 ファイルを足した。Palantir と、近い型の会社の調べもの 4 ファイル(palantir-business.md、palantir-model.md、palantir-vision.md、fde-and-services-model.md)と、示唆の 1 ファイル(palantir-implications.md)だ。
 
 ## 結論(初版の問いへの答え)
 
@@ -88,7 +88,7 @@
 
 問い: Palantir の事業と創業者たちの AI の見立てから、何が学べるか。導入と成果を売る型は、ほかの会社でどう働いたか。運営者の考え(2026-11-18)は事実と合うか。
 
-答え: Palantir は、導入を先に売る型で大きな GAAP の黒字を出している。ただし、黒字になったのは創業から約 20 年後で、相手は大きな組織だ。同じ型の会社でも赤字は多く、型だけで利益が出るとは言えない。AI のモデルの会社は大きな損失を出しているが、損失の主な中身は計算資源と評価の変動で、「売り方が原因」を示す一次情報は見つからなかった。示唆は [palantir-implications.md](palantir-implications.md) にまとめた。
+答え: Palantir は、導入を先に売る型で大きな GAAP の黒字を出している。ただし、会社が初めての GAAP の黒字の四半期とするのは Q4 2022 だ(創業は 2003 年。約 20 年の赤字は推測)。相手は大きな組織だ。同じ型の会社でも赤字は多く、型だけで利益が出るとは言えない。AI のモデルの会社は大きな損失を出しているが、損失の主な中身は計算資源と評価の変動で、「売り方が原因」を示す一次情報は見つからなかった。示唆は [palantir-implications.md](palantir-implications.md) にまとめた。
 
 ### 事業の数字(palantir-business.md)
 
@@ -110,11 +110,11 @@
 
 - Karp は 2024 年から一貫して「モデルは必要だが十分ではない。価値はモデルを業務とデータにつなぐ層にある」と書く。2026-11 の手紙は、モデルだけでは価値が小さいと書いた。[palantir-vision.md「2.1」](palantir-vision.md)
 - 2026-08 の手紙は、Palantir はクリック、トークン、チャットで課金せず、価値の一部として支払われると書いた。[palantir-vision.md「2.2」](palantir-vision.md)
-- 「モデルは安くなる」は価格の面で支えられた(第三者の分析)。「人を減らす」(2025-08、報道)は、2026-09 末の時点では外れた。[palantir-vision.md「5. 見立ての採点」](palantir-vision.md)
+- 「モデルは安くなる」は価格の面で支えられた(第三者の分析)。「人を約 3,600 人に減らせる」(2025-08、報道)は期限のない見込みで、まだ分からない。2026-09 末の時点では人数は減っていない。[palantir-vision.md「5. 見立ての採点」](palantir-vision.md)
 
 ### 同じ型、近い型、うまくいかなかった型(fde-and-services-model.md)
 
-- 運営者の考えの確かめ: 「利益を続けて示すのは Palantir だけ」は一部合っている(AI のモデル、エージェント、プラットフォームを主に売る会社に限れば合う)。「ほかはお金を失い続けている」は一部合っている(損失は大きいが、営業の段階で黒字の四半期を出した会社もある)。「AI の製品はもう広く使う製品として売らない」は合っていない。規範の文は palantir-implications.md で答える。[fde-and-services-model.md「運営者の考えの確かめ」](fde-and-services-model.md)
+- 運営者の考えの確かめ: 「利益を続けて示すのは Palantir だけ」は一部合っている。AI のモデルと AI プラットフォームを主に売る上場の会社に限れば合う。ただし AI エージェントを製品の柱に置く UiPath は、5 四半期続けて GAAP の黒字だ(うち 2025-08〜10 は税の評価性引当金の取り崩しを含む)。Palantir の最初の黒字(Q4 2022)は AIP より前で、営業外の収益による。会社自身も「n of 1」と宣伝している。「ほかはお金を失い続けている」は一部合っている(損失は大きいが、営業の段階で黒字の四半期を出した会社もある)。「AI の製品はもう広く使う製品として売らない」は合っていない。規範の文は palantir-implications.md で答える。[fde-and-services-model.md「運営者の考えの確かめ」](fde-and-services-model.md)
 - FDE の型は AI のモデルの会社に広がった(OpenAI、Anthropic、Cohere、Scale AI の 2026 年の求人)。ただし Anthropic の届出は、広がりの多くが「organic」だと書く。[fde-and-services-model.md「1.」](fde-and-services-model.md)
 - 導入を先に売る C3.ai は、創業から毎期赤字で、FY2026 の売上は 35.7% 減った。[fde-and-services-model.md「3. うまくいかなかった会社」](fde-and-services-model.md)
 - 成果課金は顧客対応の AI で広がった(Intercom Fin は 1 成果 0.99 ドル、Sierra、Zendesk)。一方で Decagon は、多くの顧客が会話ごとの課金を選ぶと書く。大きな SaaS の会社は、席数の課金が AI で揺らぐと 10-K に書く。[fde-and-services-model.md「2.」「5. SaaS の席数の課金と、成果や導入の課金の比べ」](fde-and-services-model.md)
@@ -240,7 +240,7 @@
 | [palantir-vision.md](palantir-vision.md) | 創業者たちの AI の見立てと予測、その採点 | 示唆の背景 |
 | [fde-and-services-model.md](fde-and-services-model.md) | 運営者の考えの確かめ。同じ型、近い型、うまくいかなかった型の会社と、AI の会社の売上と損失。課金の形の比べ | 収益の形(U4)、運営者の考えとの対応(8 節) |
 | [palantir-implications.md](palantir-implications.md) | 第 3 版の 4 ファイルからの示唆。hiring-os(連携、収益の形、相手の大きさ、一人で導入を回す分け方)、Prototype Studio(企業名なしで書いた節)、会社の AI の進め方(3 つの型の比べと、運営者の考えへの答え) | U4 の案 4、U16、H19、H20、8 節の 14〜18 |
-| [source-check.md](source-check.md) | 出典 48 件の確かめと直し | 調べものの確からしさ |
+| [source-check.md](source-check.md) | 出典 54 件の確かめと直し | 調べものの確からしさ |
 
 ## 見つからなかったこと
 
@@ -263,11 +263,11 @@
 - (第 2 版)非公開の料金(Greenhouse、Paradox、Kombo、SmartHR、HERP Hire の有料プラン)。
 - (第 3 版)Palantir の FDE の人数と人件費、顧客 1 社あたりの FDE の人数、ブートキャンプから契約への転換率、AIP の価格表。palantir-model.md「見つからなかったこと」。
 - (第 3 版)Palantir の Q3 2026 末の total remaining deal value と、決算説明の資料(IR のページが JavaScript で読めなかった)。palantir-business.md「見つからなかったこと」。
-- (第 3 版)AI のエージェントを主に売る会社で、GAAP の黒字を続ける会社。Sierra、Decagon などの損益。損失の原因を売り方に結びつける一次情報。fde-and-services-model.md「見つからなかったこと」。
+- (第 3 版)AI のエージェントを主に売る非上場の会社(Sierra、Decagon など)の損益。ServiceNow の GAAP の損益と、SoundHound の FY2025 の純損益(SEC と会社のサイトが開けなかった)。国内の上場の AI の会社の損益(調べていない)。損失の原因を売り方に結びつける一次情報。fde-and-services-model.md「見つからなかったこと」。
 
 ### 調べ方の限り
 
 - 調べものの途中で、この回の Web 検索の上限(200 回、全エージェントで共有)に達した。それ以後は、分かっている URL を直接開いて確かめた。上の「見つからなかった」には、検索を続ければ見つかるものが含まれうる。
 - ログインが要るページと有料のページは読んでいない。403 や 404 で開けなかったページは、各ファイルに書いた。
 - 第 2 版の 3 ファイルは、4 つの調べものの担当で分けて書いた(企業の側は 2 つに分けて 1 つのファイルにまとめた)。Web 検索は合わせて約 95 回だった。分かっている URL は直接開いた。
-- 第 3 版の 4 ファイルは、4 つの調べものの担当で分けて書いた。Web 検索は合わせて約 45 回で、SEC の書類と会社のページは URL を直接開いた。出典の確かめ(#34〜#48)は、書いた担当と別の担当がした。
+- 第 3 版の 4 ファイルは、4 つの調べものの担当で分けて書いた。Web 検索は合わせて約 45 回で、SEC の書類と会社のページは URL を直接開いた。出典の確かめ(#34〜#48)は、書いた担当と別の担当がした。#49〜#54 は、レビューの指摘を受けて直した担当が確かめた。そのうち UiPath の 4 つの書類(#49〜#51)は、別の担当も開き直して確かめた。
