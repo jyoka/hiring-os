@@ -4,6 +4,7 @@
 
 - 初版(2026-11-11): 10 ファイル。問いは「既存の大手はまだ AI ネイティブでないのか、どこに機会があるのか」。
 - 第 2 版(2026-11-18): 運営者の見直しに合わせて、連携と収益の 3 ファイルを足した(integrations-company.md、integrations-seeker.md、business-model.md)。運営者は、企業側のシステム(人事、勤怠、ATS など)を作らず、つなぐ相手にすると決めた。企業の bot は担当者の PC に、求職者の bot はスマホのネイティブアプリに入る。
+- 第 3 版(2026-11-18): 運営者の考え(導入と成果を売る型)に合わせて、Palantir と、近い型の会社の 4 ファイルを足した(palantir-business.md、palantir-model.md、palantir-vision.md、fde-and-services-model.md)。
 
 ## 結論(初版の問いへの答え)
 
@@ -82,6 +83,41 @@
 - 求職者から取れるのは、応募に関係ない定額の料金だけだ(Q&A 問 5-1)。有料職業紹介は、アルバイトの求職者から取れない。[business-model.md「2.」](business-model.md)
 - 道具(SaaS)の提供を区分の外とする明文は見つからなかった。区分を決めるのは課金の形ではなく、誰の判断で選び、連絡を差配するかだ。[business-model.md「2.」](business-model.md)
 - 統合 API は接続ごとの課金が主だ(Merge は月 650 ドルで 10 接続まで、Finch は 1 接続 月 65 ドルから)。推測: 店舗の月額の価格帯では、店舗ごとに接続を買う形は粗利を圧迫する。[business-model.md「1. 収益の形ごとの実例」](business-model.md)
+
+## 結論(第 3 版の問い: 導入と成果を売る型)
+
+問い: Palantir の事業と創業者たちの AI の見立てから、何が学べるか。導入と成果を売る型は、ほかの会社でどう働いたか。運営者の考え(2026-11-18)は事実と合うか。
+
+答え: Palantir は、導入を先に売る型で大きな GAAP の黒字を出している。ただし、黒字になったのは創業から約 20 年後で、相手は大きな組織だ。同じ型の会社でも赤字は多く、型だけで利益が出るとは言えない。AI のモデルの会社は大きな損失を出しているが、損失の主な中身は計算資源と評価の変動で、「売り方が原因」を示す一次情報は見つからなかった。示唆は palantir-implications.md(第 3 版の 2 段目)にまとめる。
+
+### 事業の数字(palantir-business.md)
+
+- 売上は FY2025 で 4,475.4 百万ドル(GAAP、前年比 +56%)。Q3 2026 は 2,313.4 百万ドル(GAAP、前年同期比 +96%)で、米国の民間(984 百万ドル)が初めて米国の政府(953 百万ドル)を上回った。[palantir-business.md「1. 売上の推移」「2. 政府と民間、米国とそれ以外」](palantir-business.md)
+- FY2025 の GAAP の営業利益は 1,414.0 百万ドル(率 32%)、純利益は 1,625.0 百万ドル。Q3 2026 の調整後営業利益率は 62%、GAAP の営業利益率は 47%。[palantir-business.md「4. 利益(GAAP と調整後)」](palantir-business.md)
+- GAAP の純利益は Q4 2022(30.9 百万ドル。営業は赤字)、営業利益は Q1 2023 から黒字になった。年では FY2023 が初めて。会社の説明は、上場前の株式報酬の費用の減り、売上の伸び、金利収入の増加だ。[palantir-business.md「5. 黒字になった時期と理由」](palantir-business.md)
+- 相手は大きな組織に偏る。顧客は 1,090(2026-09-30)、上位 20 社の 1 社あたりの売上は直近 12 か月で 146 百万ドル。上位 3 社で売上の 16%、米国政府で約 4 割(計算)。[palantir-business.md「3.」「7. 上位の顧客への偏り」](palantir-business.md)
+- 正社員は 4,634 人(2026-09-30)で、FY2025 末の 4,429 人からあまり増えていない。[palantir-business.md「9. キャッシュフローと人数」](palantir-business.md)
+
+### 売り方と作り方(palantir-model.md)
+
+- 現場に入る技術者(FDE)が顧客のデータで動く仕組みを作る。試験とブートキャンプは「多くは自社の費用で」行う。S-1 の 2019 年の Acquire の段階の顧客は、売上 0.6 百万ドルに対し貢献損失 65.4 百万ドルだった(非 GAAP)。[palantir-model.md「2.」「3. 顧客の段階と費用」](palantir-model.md)
+- 2023 年から、長い試験の代わりに AIP ブートキャンプ(公式は「0 から使える例まで 5 日」)を入れた。2024-02 までに 560 回超(会社の説明会の発言)。転換率は開示がない。[palantir-model.md「4. AIP のブートキャンプ」](palantir-model.md)
+- オントロジーは、既存のデータの上に載せる業務のデータ(objects、links)と操作(actions)のモデルだ。actions は SAP などへ書き戻せる。既存のシステムは置き換えず、上に載せる。[palantir-model.md「5.」「6. 既存のシステムを置き換えずにつなぐ」](palantir-model.md)
+- 料金はサブスクリプションと専門サービスで、契約は多くが 1〜5 年。使用量の契約もある。AIP の価格表は見つからなかった。[palantir-model.md「7. 契約の形と料金の形」](palantir-model.md)
+- 弱み: 人と試験の費用が先に出る。共通の基盤なしに型をまねると、保守できない特注の導入が積み上がる(解説)。[palantir-model.md「9. 型の弱みと批判」](palantir-model.md)
+
+### 創業者たちの見立て(palantir-vision.md)
+
+- Karp は 2024 年から一貫して「モデルは必要だが十分ではない。価値はモデルを業務とデータにつなぐ層にある」と書く。2026-11 の手紙は、モデルだけでは価値が小さいと書いた。[palantir-vision.md「2.1」](palantir-vision.md)
+- 2026-08 の手紙は、Palantir はクリック、トークン、チャットで課金せず、価値の一部として支払われると書いた。[palantir-vision.md「2.2」](palantir-vision.md)
+- 「モデルは安くなる」は価格の面で支えられた(第三者の分析)。「人を減らす」(2025-08、報道)は、2026-09 末の時点では外れた。[palantir-vision.md「5. 見立ての採点」](palantir-vision.md)
+
+### 同じ型、近い型、うまくいかなかった型(fde-and-services-model.md)
+
+- 運営者の考えの確かめ: 「利益を続けて示すのは Palantir だけ」は一部合っている(AI のモデル、エージェント、プラットフォームを主に売る会社に限れば合う)。「ほかはお金を失い続けている」は一部合っている(損失は大きいが、営業の段階で黒字の四半期を出した会社もある)。「AI の製品はもう広く使う製品として売らない」は合っていない。規範の文は palantir-implications.md で答える。[fde-and-services-model.md「運営者の考えの確かめ」](fde-and-services-model.md)
+- FDE の型は AI のモデルの会社に広がった(OpenAI、Anthropic、Cohere、Scale AI の 2026 年の求人)。ただし Anthropic の届出は、広がりの多くが「organic」だと書く。[fde-and-services-model.md「1.」](fde-and-services-model.md)
+- 導入を先に売る C3.ai は、創業から毎期赤字で、FY2026 の売上は 35.7% 減った。[fde-and-services-model.md「3. うまくいかなかった会社」](fde-and-services-model.md)
+- 成果課金は顧客対応の AI で広がった(Intercom Fin は 1 成果 0.99 ドル、Sierra、Zendesk)。一方で Decagon は、多くの顧客が会話ごとの課金を選ぶと書く。大きな SaaS の会社は、席数の課金が AI で揺らぐと 10-K に書く。[fde-and-services-model.md「2.」「5. SaaS の席数の課金と、成果や導入の課金の比べ」](fde-and-services-model.md)
 
 ## 比べる表
 
@@ -199,7 +235,11 @@
 | [integrations-company.md](integrations-company.md) | 企業の側でつなぐ相手 44 行(人事労務、勤怠、給与、評価、ATS、統合 API、求人媒体、メール、予定、チャット、文書)。API のない道、IT の承認 | 連携の戦略(4.3 節)、最初の体験の受け口(9.1) |
 | [integrations-seeker.md](integrations-seeker.md) | iOS と Android で自動で集められるもの、ストアの審査、メールの API、応募の記録の持ち出し、汎用アシスタントのスマホアプリ | 求職者のスマホでできること(4.3 節)、メールのつなぎ方(U11) |
 | [business-model.md](business-model.md) | 収益の形の実例 28 件と、職業安定法の区分、単位の経済 | 収益の形(U4) |
-| [source-check.md](source-check.md) | 出典 33 件の確かめと直し | 調べものの確からしさ |
+| [palantir-business.md](palantir-business.md) | Palantir の年次報告と四半期の決算の数字(FY2019〜Q3 2026。GAAP と調整後) | 収益の形(U4)、相手の大きさ |
+| [palantir-model.md](palantir-model.md) | Palantir の売り方と作り方(FDE、顧客の段階、ブートキャンプ、オントロジー、既存のシステムとの接続、契約と料金) | 連携の戦略(4.3 節)、収益の形(U4) |
+| [palantir-vision.md](palantir-vision.md) | 創業者たちの AI の見立てと予測、その採点 | 示唆の背景 |
+| [fde-and-services-model.md](fde-and-services-model.md) | 運営者の考えの確かめ。同じ型、近い型、うまくいかなかった型の会社と、AI の会社の売上と損失。課金の形の比べ | 収益の形(U4)、運営者の考えとの対応(8 節) |
+| [source-check.md](source-check.md) | 出典 48 件の確かめと直し | 調べものの確からしさ |
 
 ## 見つからなかったこと
 
@@ -220,9 +260,13 @@
 - (第 2 版)iOS で、第三者のアプリがほかのアプリの通知を読む公開の API。integrations-seeker.md「見つからなかったこと」。
 - (第 2 版)道具(SaaS)の提供を職業紹介と募集情報等提供の区分の外とする厚生労働省の明文。東京労働局が 2026-03 に示したとされる採用代行の見解の一次資料(報道だけ確かめた)。business-model.md「見つからなかったこと」。
 - (第 2 版)非公開の料金(Greenhouse、Paradox、Kombo、SmartHR、HERP Hire の有料プラン)。
+- (第 3 版)Palantir の FDE の人数と人件費、顧客 1 社あたりの FDE の人数、ブートキャンプから契約への転換率、AIP の価格表。palantir-model.md「見つからなかったこと」。
+- (第 3 版)Palantir の Q3 2026 末の total remaining deal value と、決算説明の資料(IR のページが JavaScript で読めなかった)。palantir-business.md「見つからなかったこと」。
+- (第 3 版)AI のエージェントを主に売る会社で、GAAP の黒字を続ける会社。Sierra、Decagon などの損益。損失の原因を売り方に結びつける一次情報。fde-and-services-model.md「見つからなかったこと」。
 
 ### 調べ方の限り
 
 - 調べものの途中で、この回の Web 検索の上限(200 回、全エージェントで共有)に達した。それ以後は、分かっている URL を直接開いて確かめた。上の「見つからなかった」には、検索を続ければ見つかるものが含まれうる。
 - ログインが要るページと有料のページは読んでいない。403 や 404 で開けなかったページは、各ファイルに書いた。
 - 第 2 版の 3 ファイルは、4 つの調べものの担当で分けて書いた(企業の側は 2 つに分けて 1 つのファイルにまとめた)。Web 検索は合わせて約 95 回だった。分かっている URL は直接開いた。
+- 第 3 版の 4 ファイルは、4 つの調べものの担当で分けて書いた。Web 検索は合わせて約 45 回で、SEC の書類と会社のページは URL を直接開いた。出典の確かめ(#34〜#48)は、書いた担当と別の担当がした。
