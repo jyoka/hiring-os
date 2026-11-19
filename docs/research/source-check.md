@@ -1,15 +1,23 @@
-# 出典の確かめ(33 件)
+# 出典の確かめ(54 件)
 
-調べものを書き終えた後、出典を選んで開き直し、書いた主張を支えているかを確かめた。合わせて 33 件だ。#1〜#18 は初版の調べもの(2026-11-11 に開き直した)、#19〜#33 は第 2 版で足した 3 ファイル(integrations-company.md、integrations-seeker.md、business-model.md。2026-11-18 に開き直した)の分だ。
+調べものを書き終えた後、出典を選んで開き直し、書いた主張を支えているかを確かめた。合わせて 54 件だ。#1〜#18 は初版の調べもの(2026-11-11 に開き直した)、#19〜#33 は第 2 版で足した 3 ファイル(integrations-company.md、integrations-seeker.md、business-model.md。2026-11-18 に開き直した)、#34〜#48 は第 3 版で足した 4 ファイル(palantir-business.md、palantir-model.md、palantir-vision.md、fde-and-services-model.md。2026-11-18 に開き直した)の分だ。#49〜#54 は、第 3 版のレビューの後に足した 6 件(2026-11-18 に開き直した)だ。
 
-## 選び方(#1〜#15)
+## 選び方(#1〜#54)
 
-Goal の順に従って選んだ。7 つのファイルから選んでいる。
+どの回も、その回の Goal が決めた順に選んだ。
 
-1. PRD が根拠に引く主張(大手の囲い、規約、権限の形、A2A)
-2. `market.md` の数字
-3. `regulation.md` の施行の日
-4. 提供の段階
+- #1〜#15(初版): 7 つのファイルから、次の順に選んだ。
+  1. PRD が根拠に引く主張(大手の囲い、規約、権限の形、A2A)
+  2. `market.md` の数字
+  3. `regulation.md` の施行の日
+  4. 提供の段階
+- #16〜#18(初版の 2 回目のレビューの後): レビューが挙げた、PRD の確定の根拠の 3 件。
+- #19〜#33(第 2 版): PRD が根拠に引く主張、料金と法の区分、OS の決まりの順。
+- #34〜#48(第 3 版): 4 つのファイルから、次の順に選んだ。
+  1. 示唆(`palantir-implications.md`)が根拠に引く主張(試験の費用、ブートキャンプ、オントロジー、FDE、型の批判、ほかの会社の損失と料金の形)
+  2. 売上と利益の数字(最新の年、最新の四半期、GAAP の黒字の始まり、上位の顧客)
+  3. 創業者の発言(株主への手紙)
+- #49〜#54(第 3 版のレビューの後): レビューが挙げた 4 つ。「Palantir だけ」の反例(UiPath)、会社の宣伝文句と「commodity cognition」の一次資料、人の数の見込みの期限、SoundHound の FY2025 の数字だ。
 
 ## 結果
 
@@ -65,9 +73,51 @@ integrations-company.md、integrations-seeker.md、business-model.md から 15 �
 | 32 | https://www.baitoru.com/solution/?p=344 | 面接コボットは 1 か月 30,000 円、12 か月 180,000 円(税抜)、月の応募 999 件まで(business-model.md「結論」「比べる表」「1. 収益の形ごとの実例」「このプロダクトへの示唆」。PRD の H18、U4) | 支えている | なし。料金の表(税抜)に 1 か月 30,000 円、3 か月 75,000 円、6 か月 120,000 円、12 か月 180,000 円があった。表は月の応募 999 件までのプランで、1,000 件以上は別のプランで相談 | 支えている |
 | 33 | https://www.merge.dev/pricing 、https://www.tryfinch.com/pricing | Merge は月 650 ドルで 10 接続まで(3 つ無料、超過 1 接続 65 ドル)。Finch の Starter は 1 接続につき月 65 ドル、15 接続まで(business-model.md「結論」「比べる表」「1. 収益の形ごとの実例」、integrations-company.md「比べる表」「Merge」「Finch」「統合 API の範囲、粗さ、料金の形」「このプロダクトへの示唆」。PRD の 4.3 節、U4) | 一部 | 金額は合っていた。Merge は「Link 3 production Linked Accounts for free」「Pay $650/month for up to 10 total production Linked Accounts. $65 per Linked Account after.」、Finch は「$65/month per connection」「Up to 15 connections」だった。ただし integrations-company.md は Merge の Linked Account を「社」と書き、料金の形を「顧客の数で払う(Merge、Finch、Apideck、Kombo)」とまとめていた。ページが数えるのは接続で、会社の数ではない。比べる表、「Merge」の節、「統合 API の範囲、粗さ、料金の形」の表と本文、「このプロダクトへの示唆」を「接続」に直した。Apideck と Kombo は顧客の数のまま | 支えている |
 
+## 新しい 4 ファイルの確かめ(#34〜#48)
+
+palantir-business.md、palantir-model.md、palantir-vision.md、fde-and-services-model.md から 15 件を選んだ。選び方は上の「選び方」の 4。開き直した日はすべて 2026-11-18。書いた人と別の担当が開き直した。
+
+- SEC の書類のうち、#40(Anthropic の S-1/A)、#41(C3.ai の 10-K)、#46(Palantir の Q3 2026 の 10-Q)は、SEC の URL を直接は読み切れなかった(403 か、途中で切れた)。同じ URL の Wayback Machine の写し(2026-10-07〜2026-11-17 の時点)で全文を読んだ。
+- palantir.com、fin.ai などの JavaScript で描くページは、HTML に埋め込まれた本文を取り出して読んだ。
+
+| # | URL | 主張(ファイルと節) | 最初の判定 | 直したこと | 直した後の判定 |
+|---|---|---|---|---|---|
+| 34 | https://www.sec.gov/Archives/edgar/data/1321655/000119312520230013/d904406ds1.htm | Acquire、Expand、Scale の定義。2019 年の Expand は (43)%、Scale は 55%。試験は「無料か低額」で会社が費用を持つ(palantir-model.md「3. 顧客の段階と費用」の「段階の定義と 2019 年の数字(S-1)」「最初の試験の費用を会社が持つ」。palantir-implications.md が引く) | 支えている | なし。MD&A の「Acquire, Expand, Scale」の節に、Acquire は「less than $100,000 in revenue from the customer that respective year」、Expand は「negative contribution margin」で「(43)%」、Scale は「positive contribution margin」で「55%」があった。Acquire の 2019 年は売上 0.6 百万ドルで「contribution loss of $65.4 million」。同じ節に「at no or low cost to them」「generally at our own expense and without a guarantee of future returns」があった | 支えている |
+| 35 | https://www.sec.gov/Archives/edgar/data/1321655/000132165526000011/pltr-20251231.htm 、https://www.palantir.com/platforms/aip/bootcamp/ | FY2025 の 10-K は、試験とブートキャンプを「多くは自社の費用で」行うと書く。公式のページは「0 から使える例まで 5 日」と書く(palantir-model.md「3. 顧客の段階と費用」「4. AIP のブートキャンプ」。palantir-implications.md が引く) | 支えている | なし。10-K に「We conduct pilots and bootcamps with customers, generally at our own expense and without a guarantee of future returns」があった。ブートキャンプのページの見出しは「From 0 to use case in 5 days.」で、5 日でやることの 3 つ(使い方の理解、最初の使い道の開発、利用者の研修)が続いた | 支えている |
+| 36 | https://www.palantir.com/docs/foundry/ontology/overview/ | オントロジーは取り込んだデジタルの資産の上に載る。意味の側(objects、properties、links)と操作の側(actions、functions、dynamic security)に分かれる。目的の 1 つに「既存のシステムとつながる意思決定の流れを組む」を挙げる(palantir-model.md「5. オントロジー」の「公式の文書の説明」。palantir-implications.md が引く) | 一部 | 「既存のシステムとつながる」の語は、目的ではなく action types の説明だった(「orchestrate decision-making processes that connect to your existing systems」)。ページが書く目的は「facilitate better decision-making in an organization at scale」だった。本文を、action types の説明と目的を分けた文に直した。ほかは合っていた(「sits on top of the digital assets integrated into the Palantir platform」「semantic elements」「kinetic elements」) | 支えている |
+| 37 | https://www.palantir.com/docs/foundry/action-types/webhooks/ | action の webhook は外部のシステムへ書き戻せる(例は Salesforce、SAP)。書き戻しの webhook が失敗すると、オントロジーの変更もしない(palantir-model.md「5. オントロジー」の「操作(actions)」。palantir-implications.md が引く) | 支えている | なし。冒頭に「sending a request to an external system, such as Salesforce, SAP」があった。Writeback の節に「if the request to the external system fails, no changes will be applied to the Foundry Ontology」と「some degree of transactionality」があった | 支えている |
+| 38 | https://jobs.lever.co/palantir/5168e8fd-fec1-4fea-b7a1-81bdaea65850 | ロンドンの FDE の求人は「Delta」の区分。顧客の中に入り、製品が今できることの外側まで作る。出張は 25〜50%(palantir-model.md「2. Forward Deployed Engineer(FDE)」の「何をする人か」「社内の呼び名」。palantir-implications.md が引く) | 支えている | なし。ページの頭に「Forward Deployed Software Engineer London, United Kingdom Delta / Full-time / Hybrid」があった。本文に「embed themselves in the customer's reality until the problem is theirs」「building past the perimeter of what the product currently offers」と、出張の 25〜50% があった | 支えている |
+| 39 | https://www.a16z.com/the-palantirization-of-everything | a16z の記事(2026-01-16)は、共通の基盤なしに型をまねると「何千もの特注の導入」になり、「ソフトの評価倍率がついた高いサービス業」になると注意する。要る人材は珍しい(palantir-model.md「9. 型の弱みと批判」。palantir-implications.md が引く) | 支えている | なし。「Posted January 16, 2026」。「The services trap is real」の節に「you end up with thousands of bespoke deployments that are impossible to maintain or upgrade」があった(記事は、ほかの論者の指摘として引いている)。「expensive services businesses with a software valuation multiple」「exceptionally rare blend of business and technical talent」もあった | 支えている |
+| 40 | https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm | S-1/A(修正 2 号)は 2026-11-10 に提出。Applied AI の部隊は FDE を含む。広がりの多くは organic。FY2025 は売上 4,585、営業損失 8,060、純損失 41,965(百万ドル、GAAP)。Q2 2026 は営業利益 974。計算資源の費用は FY2025 に売上の 160%(fde-and-services-model.md「運営者の考えの確かめ」「比べる表」「1. 同じ型、近い型」「4. AI のモデルの会社と AI エージェントの会社の売上と損失」。palantir-implications.md が引く) | 支えている | なし。表紙に「AMENDMENT NO. 2」と「November 10, 2026」があった。定義の節に「Applied AI teams, which include forward-deployed engineers」、本文に「Much of the diffusion of Claude has been organic」があった。損益の表は売上 4,585、営業損失 (8,060)、純損失 (41,965)、評価の変動 (34,308)。四半期の表の Q2 2026 は 974。計算資源の表は「653 %」「160 %」 | 支えている |
+| 41 | https://www.sec.gov/Archives/edgar/data/1577526/000157752626000078/ai-20260430.htm | C3.ai は創業の 2009 年から毎期の純損失。FY2026 の純損失は 470.4。最大 6 か月の有料の導入の段階から始め、その後は使用量の課金へ移る。売上は 389.1 から 250.3(百万ドル、GAAP)(fde-and-services-model.md「3. うまくいかなかった会社」の「C3.ai」。palantir-implications.md が引く) | 一部 | 「その後は使用量の課金へ移る」は言いすぎだった。10-K は、導入の段階の後に「a monthly fee and consumption charges」か「a time-certain multi-period commitment」に移ると書く。本文を「月額と使用量の課金か、期間を決めた複数年の契約に移る」に直した。ほかは合っていた(「We incurred net losses in each period since our founding in 2009」、470.4、「paid "Initial Production Deployment" phase of generally up-to six months」、売上 250,268 と 389,056 千ドルで「35.7% decrease」) | 支えている |
+| 42 | https://fin.ai/pricing 、https://sierra.ai/blog/outcome-based-pricing-for-ai-agents | Fin は 1 成果 0.99 ドル、月 50 成果の最低、Intercom の席は別。Sierra は成果課金で、合わない場面は会話ごとの課金を混ぜる(fde-and-services-model.md「比べる表」「2. サービスをソフトウェアのように売る会社」の「Sierra」「Intercom(Fin)」。palantir-implications.md が引く) | 一部 | 比べる表が条件を落としていた。月 50 成果の最低(月 49 ドル)は、ほかの会社の道具と使う場合だけで、その場合は席の料金がない(「No seat costs」)。席の月 19 ドルは Intercom の helpdesk と使う場合の料金だった。比べる表と節 2 に条件を足した。ほかは合っていた(「$0.99 per outcome」、Sierra の「Sierra gets paid only when we complete a task for you」と、会話の数で払う「blended pricing approach」) | 支えている |
+| 43 | https://www.sec.gov/Archives/edgar/data/1321655/000132165526000011/pltr-20251231.htm | FY2025 の売上 4,475.4(+56%)、GAAP の営業利益 1,414.0、GAAP の純利益(普通株主に帰属)1,625.0、調整後営業利益 2,254.1(百万ドル)。10-K の提出は 2026-02-17(palantir-business.md「結論」「1. 売上の推移」「4. 利益」) | 支えている | なし。財務諸表の値(千ドル)は売上 4,475,446、営業利益 1,414,015、純利益 1,625,033、調整後営業利益 2,254,100。MD&A に「a 56% growth rate」があった。EDGAR の索引の「Filing Date」は 2026-02-17 | 支えている |
+| 44 | https://www.sec.gov/Archives/edgar/data/1321655/000132165526000045/a2026q3ex991pressrelease.htm | Q3 2026 の売上 2,313.4(+96%)。US commercial 984(+148%)が初めて US government 953 を上回った。GAAP の営業利益 1,084.8、調整後営業利益 1,426.8(62%)、Rule of 40 は 158%、GAAP の純利益 1,128.0(百万ドル)。発表は 2026-11-02(palantir-business.md「結論」「2. 政府と民間」「4. 利益」。palantir-implications.md が引く) | 支えている | なし。日付は 11/2/2026。Highlights に「Revenue grew 96%」「U.S. commercial revenue grew 148% ... to $984 million」「surpassed U.S. government revenue for the first time ever」「Rule of 40 score of 158%」があった。損益計算書は 2,313,411、1,084,845、1,128,012 千ドル。調整表の調整後営業利益は 1,426,840 千ドル | 支えている |
+| 45 | https://www.sec.gov/Archives/edgar/data/1321655/000132165523000005/a2022q4ex991pressrelease.htm | 初めての GAAP の純利益の四半期は Q4 2022 で、純利益 30.9、営業損失 -17.8(百万ドル)(palantir-business.md「5. 黒字になった時期と理由」。palantir-implications.md が引く) | 支えている | なし。見出しは「Palantir Reports Its First Quarter of Positive GAAP Net Income」で、日付は 2/13/2023。損益計算書は営業損失 (17,826)、金利収入 12,750、その他の収益 44,637、純利益 30,878 千ドル | 支えている |
+| 46 | https://www.sec.gov/Archives/edgar/data/1321655/000132165526000048/pltr-20260930.htm | 2026-09-30 で顧客 1,090。上位 20 社の 1 社あたりの売上(直近 12 か月)146 百万ドル。上位 3 社で 9M 2026 の売上の 16%。正社員 4,634 人(palantir-business.md「3. 顧客の数と 1 社あたりの売上」「7. 上位の顧客への偏り」「9. キャッシュフローと人数」。palantir-implications.md が引く) | 支えている | なし。「Our Customers」に「we had 1,090 and 911 customers」と「average revenue for the top twenty customers ... was $146 million」があった。Item 1A に「16% of our revenue for each of the nine months ended September 30, 2026 and 2025」と「4,634 full-time employees」があった | 支えている |
+| 47 | https://www.palantir.com/q3-2026-letter/en/ | 2026-11-02 の手紙: モデルだけでは価値が小さい。Palantir の運用の型なしに、LLM を大企業へ確実につなぐ手段はない。企業につながらない LLM のエージェントは、ほぼ無限の負債(palantir-vision.md「1. 発言の一覧」「2.1」。palantir-implications.md が引く) | 支えている | なし。本文に「these models on their own generate limited value」「the LLM agent is a virtually unlimited liability」「There is simply no means of effectively and reliably connecting the language models to large enterprises without the operating model and capabilities we have pioneered」があった | 支えている |
+| 48 | https://www.palantir.com/q2-2026-letter/en/ | 2026-08-03 の手紙: 主権の AI の運動。顧客はデータとプロンプトの管理を求める。モデルの会社は顧客の知恵を取り込む作り。Palantir はクリック、トークン、チャットで課金せず、価値の一部として支払われる(palantir-vision.md「1. 発言の一覧」「2.2」。palantir-implications.md が引く) | 支えている | なし。冒頭に「AI sovereignty is now well underway」と、データとプロンプトの管理、モデルの会社(language labs)が知恵(alpha)を取り込む作りの記述があった。後半に「as a derivative of value creation」「We do not get paid for clicks or tokens or chats」があった | 支えている |
+
+## 第 3 版のレビューの後の確かめ(#49〜#54)
+
+第 3 版のレビューが挙げた反例と数字を、同じ形で確かめた。開き直した日はすべて 2026-11-18。
+
+- この回は、SEC(www.sec.gov と data.sec.gov)が 403 を返した。UiPath の書類は、会社の IR のサイトに載る同じ書類(SEC の受付番号が同じもの)で読んだ。
+- #52 は、SEC の同じ URL を、この日の作業の中で先に保存した写しで読んだ。開き直しは 403 だった。
+- ServiceNow は、SEC も会社のサイトも開けなかった。表に入れず、fde-and-services-model.md に「確かめていない」と書いた。
+
+| # | URL | 主張(ファイルと節) | 最初の判定 | 直したこと | 直した後の判定 |
+|---|---|---|---|---|---|
+| 49 | https://ir.uipath.com/financials/sec-filings/content/0001734722-26-000012/path-20260131.htm | UiPath は自社を agentic automation の会社とし、AI agents を製品の柱に置く。FY2026(2026-01 まで)の売上 1,610.6、GAAP の営業利益 56.8、純利益 282.3(百万ドル)(fde-and-services-model.md「運営者の考えの確かめ」の 3a、3c、節 4「反例」) | 支えている | なし。表題は「March 25, 2026 - 10-K」。本文に「pioneering the evolution from rule-based automation to intelligent agentic automation」と「combine automation, AI agents, and people」があった。損益計算書は売上 1,610,572、営業利益 56,760、純利益 282,330 千ドル。税の利益(benefit)は 181,702 千ドル | 支えている |
+| 50 | https://ir.uipath.com/financials/sec-filings/content/0001734722-25-000050/path-20251031.htm | 2025-08〜10 の GAAP の純利益 198.8 は、税の評価性引当金の取り崩しを含む。税引前の利益 24.6、税の利益 174.2。取り崩しは米国の連邦の分 175.1 と、ニューヨークの州と市の分 9.3(百万ドル)(fde-and-services-model.md 節 4「反例」) | 支えている | なし。損益計算書は税引前 24,592、税の利益 (174,247)、純利益 198,839 千ドル。注記に「we released $ 175.1 million of the valuation allowance associated with the U.S. federal DTA and $ 9.3 million ... New York State and New York City」があった。営業利益は 13,071 千ドル | 支えている |
+| 51 | https://ir.uipath.com/financials/sec-filings/content/0001734722-26-000041/path-20260430.htm 、https://ir.uipath.com/financials/sec-filings/content/0001734722-26-000050/path-20260731.htm | GAAP の純利益は 2025-05〜07 が 1.6、2026-02〜04 が 22.5、2026-05〜07 が 36.1。営業損益は 2025-05〜07 が -20.2、2026-02〜04 が 28.0、2026-05〜07 が 31.6(百万ドル)(fde-and-services-model.md 節 4「反例」) | 支えている | なし。2026-04 期の 10-Q は純利益 22,525、営業利益 27,987 千ドル。2026-07 期の 10-Q は純利益 36,089 と前年同期 1,584、営業利益 31,604 と前年同期 (20,185) 千ドル | 支えている |
+| 52 | https://www.sec.gov/Archives/edgar/data/1321655/000132165526000004/a2025q4ex991earningsrelease.htm | Q4 2025 の決算の発表(2026-02-02)で、Karp は「We are an n of 1」「Palantir is alone in choosing ...」と述べ、AI のモデルの進歩を他社より先に「commodity cognition」と呼んだと述べた(fde-and-services-model.md の 3a と節 4「反例」、palantir-vision.md「1. 発言の一覧」「2.1」) | 支えている | なし。日付は February 2, 2026。本文に「We are an n of 1, and these numbers prove it. Palantir is alone in choosing to exclusively focus on scaling the operational leverage made possible by the rapid advancements of AI models, a trend that we first called 'commodity cognition' well before others started repeating it」があった | 支えている |
+| 53 | https://fortune.com/2025/08/06/palantir-alex-karp-top-25-valuable-companies-world-but-not-in-fortune-500 | Karp は 2025-08 に、売上を伸ばしつつ人を約 500 人減らして約 3,600 人にできると述べた(報道)。2026-09 末の時点で外れた(palantir-vision.md「結論」「5. 見立ての採点」) | 一部 | 記事は「could keep growing revenue while reducing headcount by 500 jobs to about 3,600 people」で、期限がなかった。「外れた」は言いすぎなので、「まだ分からないこと」に移し、期限のない見込みと書いた | 支えている |
+| 54 | https://data.sec.gov/api/xbrl/companyconcept/CIK0001840856/us-gaap/NetIncomeLoss.json | SoundHound の FY2025 の純損失 14.0、営業損失 23.3(百万ドル、GAAP)(fde-and-services-model.md「比べる表」、節 4) | 支えていない | 開き直しは 403。レビューは、XBRL の値 -14,006 ドルが桁の誤りに見え、9 か月の -54.1 と合わせると Q4 2025 が +40 になると指摘した。10-K の損益計算書で確かめられなかったので、FY2025 の営業損益と純損益を消し、「確かめられなかった」と書いた | 消した |
+
 ## まとめ
 
-- 33 件のうち、最初から支えていたのは 25 件だった。8 件は「一部」で、本文を直して「支えている」にした。消した主張はない。
+- 54 件のうち、最初から支えていたのは 41 件だった。12 件は「一部」で、本文を直して「支えている」にした。1 件(#54)は「支えていない」で、主張を消した。
 - #1〜#15: 11 件は最初から支えていた。4 件は「一部」で、本文を直して「支えている」にした。#8 は最初「支えている」としたが、2 回目のレビューで「一部」と分かった。
 - #16〜#18(追加の 3 件): すべて最初から支えていた。
 - #19〜#33(新しい 3 ファイル): 11 件は最初から支えていた。4 件(#26、#28、#30、#33)は「一部」で、本文を直して「支えている」にした。
@@ -75,6 +125,13 @@ integrations-company.md、integrations-seeker.md、business-model.md から 15 �
   - #28: 通話履歴の条件は既定の電話かアシスタントで、SMS とは違った。権限ごとに分けて書いた。
   - #30: 求職者への金銭等の提供の禁止は、目的を問わない。目的を狭めた書き方を直した。
   - #33: Merge の料金が数えるのは接続で、会社の数ではない。「接続」に直した。
+- #34〜#48(第 3 版の 4 ファイル): 12 件は最初から支えていた。3 件(#36、#41、#42)は「一部」で、本文を直して「支えている」にした。
+  - #36: 「既存のシステムとつながる」は、オントロジーの目的ではなく action types の説明だった。分けて書いた。
+  - #41: C3.ai の導入の段階の後は、使用量の課金だけでなく、月額と使用量か、複数年の契約だった。
+  - #42: Fin の月 50 成果の最低は、ほかの会社の道具と使う場合だけだった。席の料金の条件も足した。
 - 選んだファイル(#1〜#18): regulation.md(4 件)、market.md(3 件)、job-platforms.md(4 件)、ats.md(2 件)、ai-hiring-tools.md、general-assistants.md、a2a-and-permissions.md、stripe-modular-agentic.md、risks.md(各 1 件)。
 - 選んだファイル(#19〜#33): integrations-company.md(9 件、うち #26 と #33 は他のファイルと共通)、integrations-seeker.md(4 件)、business-model.md(4 件)。
-- 確かめていないこと: この表の 33 件の外の主張は、各ファイルを書いた時に一度開いただけで、開き直していない。
+- #49〜#54(第 3 版のレビューの後): 4 件(#49〜#52)は最初から支えていた。#53 は「一部」で、本文を直して「支えている」にした。#54 は「支えていない」で、数字を消した。
+- 選んだファイル(#34〜#48): palantir-model.md(6 件)、palantir-business.md(4 件)、fde-and-services-model.md(3 件)、palantir-vision.md(2 件)。
+- 選んだファイル(#49〜#54): fde-and-services-model.md(5 件、うち #52 は palantir-vision.md と共通)、palantir-vision.md(1 件)。
+- 確かめていないこと: この表の 54 件の外の主張は、各ファイルを書いた時に一度開いただけで、開き直していない。
